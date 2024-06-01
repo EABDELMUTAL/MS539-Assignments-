@@ -97,7 +97,7 @@ namespace thedigitalizationprojectproposal
 
         private void locationAddressTextBox_TextChanged(object sender, EventArgs e)
         {
-
+           //
         }
 
         private void doubleRoomsOccupiedTextBox_TextChanged(object sender, EventArgs e)
@@ -172,7 +172,7 @@ namespace thedigitalizationprojectproposal
 
         private void outputLogoLabel_Click(object sender, EventArgs e)
         {
-            outputLogoLabel.Text = "5p-OpEx Group Inc." +" "+ "+1 347 406 2191";
+            outputLogoLabel.Text = "5p-OpEx Group Inc." +" "+ "+1 347 406 2191" + " " + "eleanor@5p-OpExGroup.org";
         }
 
         private void exitButton_Click(object sender, EventArgs e)
