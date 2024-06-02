@@ -147,7 +147,7 @@ namespace thedigitalizationprojectproposal
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-           //
+           //int hotel = 4000;
         }
 
         private void communicateArticleDescriptionButton_Click(object sender, EventArgs e)
