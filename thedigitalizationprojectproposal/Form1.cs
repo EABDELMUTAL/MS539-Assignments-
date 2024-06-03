@@ -69,7 +69,8 @@ namespace thedigitalizationprojectproposal
 
         private void outputFormulaLabel2_Click(object sender, EventArgs e)
         {
-
+            double grossIncome = 00.0;
+            outputFormulaLabel2.Text = grossIncome.ToString();
         }
 
         private void tourismLabel10_Click(object sender, EventArgs e)
@@ -97,7 +98,7 @@ namespace thedigitalizationprojectproposal
 
         private void locationAddressTextBox_TextChanged(object sender, EventArgs e)
         {
-           //
+           
         }
 
         private void doubleRoomsOccupiedTextBox_TextChanged(object sender, EventArgs e)
@@ -157,16 +158,26 @@ namespace thedigitalizationprojectproposal
             hotelOrLodgingArticleDescription = hotelOrLodgingTextBox.Text + " " + classificationStandardsTextBox.Text + " " + hotelStandardRatesTextBox.Text;
             outputHotelOrLodgingLabel.Text = hotelOrLodgingArticleDescription;
 
+            MessageBox.Show(hotelOrLodgingArticleDescription);
+
         }
 
         private void calculateGrossIncomeButton_Click(object sender, EventArgs e)
-        {
+        { 
+            //to hold rooms number filled compared to total available roooms
             int occupiedRooms;
+            //to hold rates used and take the average
             double averageDailyRates;
+            //get the average gross income in that case before calculating
+            //the gross revenue and assign to grossIncome
             double grossIncome;
+            //get the rooms occupied in whole number and assign it to the occupied rooms variable 
             occupiedRooms = int.Parse(occupiedRoomsTotalTextBox.Text);
+            //get the average daily rates in real Number and assign it to the average daily rates variable 
             averageDailyRates = double.Parse(averageDailyRoomRatesTextBox.Text);
+            //Calculate gross Income
             grossIncome = (int)occupiedRooms * averageDailyRates;
+            //display the grossIncome in the outputFormulaLabel2 control
             outputFormulaLabel2.Text = grossIncome.ToString();
 
         }
