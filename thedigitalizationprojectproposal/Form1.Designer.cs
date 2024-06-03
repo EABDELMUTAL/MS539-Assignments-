@@ -520,9 +520,9 @@
             // sitePictureBox
             // 
             this.sitePictureBox.Image = global::thedigitalizationprojectproposal.Properties.Resources._20191101_191004302_iOS;
-            this.sitePictureBox.Location = new System.Drawing.Point(1053, 23);
+            this.sitePictureBox.Location = new System.Drawing.Point(1053, 22);
             this.sitePictureBox.Name = "sitePictureBox";
-            this.sitePictureBox.Size = new System.Drawing.Size(273, 191);
+            this.sitePictureBox.Size = new System.Drawing.Size(273, 194);
             this.sitePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.sitePictureBox.TabIndex = 82;
             this.sitePictureBox.TabStop = false;
