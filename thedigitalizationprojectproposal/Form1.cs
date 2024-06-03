@@ -71,6 +71,11 @@ namespace thedigitalizationprojectproposal
         {
             double grossIncome = 00.0;
             outputFormulaLabel2.Text = grossIncome.ToString();
+
+            String message;
+            message = "It must be a double value in Gross Income" + " " + "Thank your for telling us your estimation";
+            MessageBox.Show(message.ToString());
+
         }
 
         private void tourismLabel10_Click(object sender, EventArgs e)
