@@ -64,7 +64,7 @@ namespace thedigitalizationprojectproposal
 
         private void tourismLabel9_Click(object sender, EventArgs e)
         {
-
+            //
         }
 
         private void outputFormulaLabel2_Click(object sender, EventArgs e)
