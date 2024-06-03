@@ -69,7 +69,7 @@ namespace thedigitalizationprojectproposal
 
         private void outputFormulaLabel2_Click(object sender, EventArgs e)
         {
-            double grossIncome = 00.0;
+            double grossIncome = 00.00;
             outputFormulaLabel2.Text = grossIncome.ToString();
 
             String message;
