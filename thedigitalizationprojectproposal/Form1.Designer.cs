@@ -93,7 +93,7 @@
             // 
             this.communicateArticleDescriptionButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.communicateArticleDescriptionButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.communicateArticleDescriptionButton.Location = new System.Drawing.Point(902, 368);
+            this.communicateArticleDescriptionButton.Location = new System.Drawing.Point(1049, 368);
             this.communicateArticleDescriptionButton.Margin = new System.Windows.Forms.Padding(4);
             this.communicateArticleDescriptionButton.Name = "communicateArticleDescriptionButton";
             this.communicateArticleDescriptionButton.Size = new System.Drawing.Size(134, 20);
@@ -133,7 +133,7 @@
             // 
             this.calculateNetIncomeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.calculateNetIncomeButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.calculateNetIncomeButton.Location = new System.Drawing.Point(903, 427);
+            this.calculateNetIncomeButton.Location = new System.Drawing.Point(1050, 427);
             this.calculateNetIncomeButton.Margin = new System.Windows.Forms.Padding(4);
             this.calculateNetIncomeButton.Name = "calculateNetIncomeButton";
             this.calculateNetIncomeButton.Size = new System.Drawing.Size(133, 20);
@@ -146,7 +146,7 @@
             // 
             this.calculateGrossIncomeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.calculateGrossIncomeButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.calculateGrossIncomeButton.Location = new System.Drawing.Point(903, 398);
+            this.calculateGrossIncomeButton.Location = new System.Drawing.Point(1050, 398);
             this.calculateGrossIncomeButton.Margin = new System.Windows.Forms.Padding(4);
             this.calculateGrossIncomeButton.Name = "calculateGrossIncomeButton";
             this.calculateGrossIncomeButton.Size = new System.Drawing.Size(133, 20);
@@ -227,7 +227,7 @@
             this.outputFormulaLabel2.Location = new System.Drawing.Point(414, 398);
             this.outputFormulaLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.outputFormulaLabel2.Name = "outputFormulaLabel2";
-            this.outputFormulaLabel2.Size = new System.Drawing.Size(472, 20);
+            this.outputFormulaLabel2.Size = new System.Drawing.Size(605, 20);
             this.outputFormulaLabel2.TabIndex = 63;
             this.outputFormulaLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.outputFormulaLabel2.Click += new System.EventHandler(this.outputFormulaLabel2_Click);
@@ -239,7 +239,7 @@
             this.outputFormulaLabel3.Location = new System.Drawing.Point(398, 426);
             this.outputFormulaLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.outputFormulaLabel3.Name = "outputFormulaLabel3";
-            this.outputFormulaLabel3.Size = new System.Drawing.Size(488, 20);
+            this.outputFormulaLabel3.Size = new System.Drawing.Size(621, 20);
             this.outputFormulaLabel3.TabIndex = 62;
             this.outputFormulaLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.outputFormulaLabel3.Click += new System.EventHandler(this.outputFormulaLabel3_Click);
@@ -251,7 +251,7 @@
             this.outputHotelOrLodgingLabel.Location = new System.Drawing.Point(412, 369);
             this.outputHotelOrLodgingLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.outputHotelOrLodgingLabel.Name = "outputHotelOrLodgingLabel";
-            this.outputHotelOrLodgingLabel.Size = new System.Drawing.Size(474, 20);
+            this.outputHotelOrLodgingLabel.Size = new System.Drawing.Size(607, 20);
             this.outputHotelOrLodgingLabel.TabIndex = 61;
             this.outputHotelOrLodgingLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.outputHotelOrLodgingLabel.Click += new System.EventHandler(this.outputHotelOrLodgingLabel_Click);
@@ -279,7 +279,7 @@
             this.averageDailyRoomRatesTextBox.Location = new System.Drawing.Point(351, 339);
             this.averageDailyRoomRatesTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.averageDailyRoomRatesTextBox.Name = "averageDailyRoomRatesTextBox";
-            this.averageDailyRoomRatesTextBox.Size = new System.Drawing.Size(535, 21);
+            this.averageDailyRoomRatesTextBox.Size = new System.Drawing.Size(668, 21);
             this.averageDailyRoomRatesTextBox.TabIndex = 59;
             this.averageDailyRoomRatesTextBox.TextChanged += new System.EventHandler(this.averageDailyRoomRatesTextBox_TextChanged);
             // 
@@ -336,7 +336,7 @@
             this.occupiedRoomsTotalTextBox.Location = new System.Drawing.Point(523, 310);
             this.occupiedRoomsTotalTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.occupiedRoomsTotalTextBox.Name = "occupiedRoomsTotalTextBox";
-            this.occupiedRoomsTotalTextBox.Size = new System.Drawing.Size(363, 21);
+            this.occupiedRoomsTotalTextBox.Size = new System.Drawing.Size(496, 21);
             this.occupiedRoomsTotalTextBox.TabIndex = 55;
             this.occupiedRoomsTotalTextBox.TextChanged += new System.EventHandler(this.occupiedRoomsTotalTextBox_TextChanged);
             // 
@@ -362,7 +362,7 @@
             this.hotelStandardRatesTextBox.Location = new System.Drawing.Point(371, 280);
             this.hotelStandardRatesTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.hotelStandardRatesTextBox.Name = "hotelStandardRatesTextBox";
-            this.hotelStandardRatesTextBox.Size = new System.Drawing.Size(515, 23);
+            this.hotelStandardRatesTextBox.Size = new System.Drawing.Size(648, 23);
             this.hotelStandardRatesTextBox.TabIndex = 53;
             this.hotelStandardRatesTextBox.TextChanged += new System.EventHandler(this.hotelStandardRatesTextBox_TextChanged);
             // 
@@ -388,7 +388,7 @@
             this.classificationStandardsTextBox.Location = new System.Drawing.Point(347, 253);
             this.classificationStandardsTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.classificationStandardsTextBox.Name = "classificationStandardsTextBox";
-            this.classificationStandardsTextBox.Size = new System.Drawing.Size(539, 23);
+            this.classificationStandardsTextBox.Size = new System.Drawing.Size(672, 23);
             this.classificationStandardsTextBox.TabIndex = 51;
             this.classificationStandardsTextBox.TextChanged += new System.EventHandler(this.classificationStandardsTextBox_TextChanged);
             // 
@@ -414,7 +414,7 @@
             this.singleRoomsOccupiedTextBox.Location = new System.Drawing.Point(311, 224);
             this.singleRoomsOccupiedTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.singleRoomsOccupiedTextBox.Name = "singleRoomsOccupiedTextBox";
-            this.singleRoomsOccupiedTextBox.Size = new System.Drawing.Size(575, 23);
+            this.singleRoomsOccupiedTextBox.Size = new System.Drawing.Size(708, 23);
             this.singleRoomsOccupiedTextBox.TabIndex = 49;
             this.singleRoomsOccupiedTextBox.TextChanged += new System.EventHandler(this.singleRoomsOccupiedTextBox_TextChanged);
             // 
@@ -440,7 +440,7 @@
             this.doubleRoomsOccupiedTextBox.Location = new System.Drawing.Point(317, 196);
             this.doubleRoomsOccupiedTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.doubleRoomsOccupiedTextBox.Name = "doubleRoomsOccupiedTextBox";
-            this.doubleRoomsOccupiedTextBox.Size = new System.Drawing.Size(569, 23);
+            this.doubleRoomsOccupiedTextBox.Size = new System.Drawing.Size(702, 23);
             this.doubleRoomsOccupiedTextBox.TabIndex = 47;
             this.doubleRoomsOccupiedTextBox.TextChanged += new System.EventHandler(this.doubleRoomsOccupiedTextBox_TextChanged);
             // 
@@ -466,7 +466,7 @@
             this.locationAddressTextBox.Location = new System.Drawing.Point(300, 166);
             this.locationAddressTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.locationAddressTextBox.Name = "locationAddressTextBox";
-            this.locationAddressTextBox.Size = new System.Drawing.Size(586, 23);
+            this.locationAddressTextBox.Size = new System.Drawing.Size(719, 23);
             this.locationAddressTextBox.TabIndex = 45;
             this.locationAddressTextBox.TextChanged += new System.EventHandler(this.locationAddressTextBox_TextChanged);
             // 
@@ -492,7 +492,7 @@
             this.hotelOrLodgingTextBox.Location = new System.Drawing.Point(222, 137);
             this.hotelOrLodgingTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.hotelOrLodgingTextBox.Name = "hotelOrLodgingTextBox";
-            this.hotelOrLodgingTextBox.Size = new System.Drawing.Size(664, 23);
+            this.hotelOrLodgingTextBox.Size = new System.Drawing.Size(797, 23);
             this.hotelOrLodgingTextBox.TabIndex = 43;
             this.hotelOrLodgingTextBox.TextChanged += new System.EventHandler(this.hotelOrLodgingTextBox_TextChanged);
             // 
