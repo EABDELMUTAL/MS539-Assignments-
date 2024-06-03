@@ -76,6 +76,9 @@ namespace thedigitalizationprojectproposal
             message = "It must be a double value in Gross Income" + " " + "Thank your for telling us your estimation";
             MessageBox.Show(message.ToString());
 
+            double amount = 93000;
+            MessageBox.Show(amount.ToString("c"));
+
         }
 
         private void tourismLabel10_Click(object sender, EventArgs e)
