@@ -212,5 +212,21 @@ namespace thedigitalizationprojectproposal
             outputFormulaLabel2.Text = "";
             outputFormulaLabel3.Text = "";
         }
+
+        private void showBackButton_Click(object sender, EventArgs e)
+        {
+            {
+                sitePictureBox.Visible = true;
+                logoPictureBox.Visible = false;
+            }
+
+        }
+
+        private void showFrontButton_Click(object sender, EventArgs e)
+        {
+            sitePictureBox.Visible = false;
+            logoPictureBox.Visible = true;
+
+        }
     }
 }

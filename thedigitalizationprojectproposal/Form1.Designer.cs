@@ -37,7 +37,6 @@
             this.calculateGrossIncomeButton = new System.Windows.Forms.Button();
             this.connectToTouristAppButtom = new System.Windows.Forms.Button();
             this.connectToOneStopTourismServicesButton = new System.Windows.Forms.Button();
-            this.logoPictureBox = new System.Windows.Forms.PictureBox();
             this.tourismLabel12 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.outputFormulaLabel2 = new System.Windows.Forms.Label();
@@ -63,6 +62,11 @@
             this.hotelOrLodgingTextBox = new System.Windows.Forms.TextBox();
             this.tourismLabel1 = new System.Windows.Forms.Label();
             this.clearButton = new System.Windows.Forms.Button();
+            this.sitePictureBox = new System.Windows.Forms.PictureBox();
+            this.logoPictureBox = new System.Windows.Forms.PictureBox();
+            this.showBackButton = new System.Windows.Forms.Button();
+            this.showFrontButton = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.sitePictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -184,17 +188,6 @@
             this.connectToOneStopTourismServicesButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.connectToOneStopTourismServicesButton.UseVisualStyleBackColor = true;
             this.connectToOneStopTourismServicesButton.Click += new System.EventHandler(this.connectToOneStopTourismServicesButton_Click);
-            // 
-            // logoPictureBox
-            // 
-            this.logoPictureBox.Image = global::thedigitalizationprojectproposal.Properties.Resources.IMG_5738;
-            this.logoPictureBox.Location = new System.Drawing.Point(1053, 22);
-            this.logoPictureBox.Margin = new System.Windows.Forms.Padding(4);
-            this.logoPictureBox.Name = "logoPictureBox";
-            this.logoPictureBox.Size = new System.Drawing.Size(273, 192);
-            this.logoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.logoPictureBox.TabIndex = 66;
-            this.logoPictureBox.TabStop = false;
             // 
             // tourismLabel12
             // 
@@ -524,6 +517,49 @@
             this.clearButton.UseVisualStyleBackColor = true;
             this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
+            // sitePictureBox
+            // 
+            this.sitePictureBox.Image = global::thedigitalizationprojectproposal.Properties.Resources._20191101_191004302_iOS;
+            this.sitePictureBox.Location = new System.Drawing.Point(1053, 23);
+            this.sitePictureBox.Name = "sitePictureBox";
+            this.sitePictureBox.Size = new System.Drawing.Size(273, 191);
+            this.sitePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.sitePictureBox.TabIndex = 82;
+            this.sitePictureBox.TabStop = false;
+            // 
+            // logoPictureBox
+            // 
+            this.logoPictureBox.Image = global::thedigitalizationprojectproposal.Properties.Resources.IMG_5738;
+            this.logoPictureBox.Location = new System.Drawing.Point(1053, 22);
+            this.logoPictureBox.Margin = new System.Windows.Forms.Padding(4);
+            this.logoPictureBox.Name = "logoPictureBox";
+            this.logoPictureBox.Size = new System.Drawing.Size(273, 192);
+            this.logoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.logoPictureBox.TabIndex = 66;
+            this.logoPictureBox.TabStop = false;
+            // 
+            // showBackButton
+            // 
+            this.showBackButton.Font = new System.Drawing.Font("Verdana", 8.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showBackButton.Location = new System.Drawing.Point(1053, 307);
+            this.showBackButton.Name = "showBackButton";
+            this.showBackButton.Size = new System.Drawing.Size(75, 24);
+            this.showBackButton.TabIndex = 83;
+            this.showBackButton.Text = "Left";
+            this.showBackButton.UseVisualStyleBackColor = true;
+            this.showBackButton.Click += new System.EventHandler(this.showBackButton_Click);
+            // 
+            // showFrontButton
+            // 
+            this.showFrontButton.Font = new System.Drawing.Font("Verdana", 8.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showFrontButton.Location = new System.Drawing.Point(1251, 311);
+            this.showFrontButton.Name = "showFrontButton";
+            this.showFrontButton.Size = new System.Drawing.Size(75, 24);
+            this.showFrontButton.TabIndex = 84;
+            this.showFrontButton.Text = "Right";
+            this.showFrontButton.UseVisualStyleBackColor = true;
+            this.showFrontButton.Click += new System.EventHandler(this.showFrontButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
@@ -531,6 +567,9 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1370, 653);
+            this.Controls.Add(this.showFrontButton);
+            this.Controls.Add(this.showBackButton);
+            this.Controls.Add(this.sitePictureBox);
             this.Controls.Add(this.clearButton);
             this.Controls.Add(this.tourismLabel14);
             this.Controls.Add(this.initializeDaysOfWeekControls);
@@ -571,6 +610,7 @@
             this.Name = "Form1";
             this.Text = "One-Stop Tourism Development, Solutions and Services";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.sitePictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -614,6 +654,9 @@
         private System.Windows.Forms.TextBox hotelOrLodgingTextBox;
         private System.Windows.Forms.Label tourismLabel1;
         private System.Windows.Forms.Button clearButton;
+        private System.Windows.Forms.PictureBox sitePictureBox;
+        private System.Windows.Forms.Button showBackButton;
+        private System.Windows.Forms.Button showFrontButton;
     }
 }
 
