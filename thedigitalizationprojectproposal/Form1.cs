@@ -231,5 +231,28 @@ namespace thedigitalizationprojectproposal
             logoPictureBox.Visible = true;
 
         }
+
+        private void calculateRemainingRooms_Click(object sender, EventArgs e)
+        {
+            int doubleRooms;
+            int singleRooms;
+            double totalRooms;
+            doubleRooms = int.Parse(doubleRoomsOccupiedTextBox.Text);
+            singleRooms = int.Parse(singleRoomsOccupiedTextBox.Text);                                                                                                                                                                                                               totalRooms = double.Parse(doubleRoomsOccupiedTextBox.Text + singleRoomsOccupiedTextBox.Text);
+            totalRooms = (double)doubleRooms + singleRooms;
+            outputFormulaLabel4.Text = totalRooms.ToString();
+
+        }
+
+        private void calculateLeftoverRooms_Click(object sender, EventArgs e)
+        {
+            int occupiedRooms; int roomsTotal;
+            int totalRoomsRemainder;
+            occupiedRooms = int.Parse(occupiedRoomsTotalTextBox.Text);
+            roomsTotal = int.Parse(outputFormulaLabel4.Text);
+            totalRoomsRemainder = (int)(roomsTotal % occupiedRooms);
+            outputFormulaLabel5.Text = totalRoomsRemainder.ToString();
+
+        }
     }
 }

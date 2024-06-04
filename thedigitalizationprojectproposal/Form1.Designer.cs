@@ -66,6 +66,12 @@
             this.logoPictureBox = new System.Windows.Forms.PictureBox();
             this.showBackButton = new System.Windows.Forms.Button();
             this.showFrontButton = new System.Windows.Forms.Button();
+            this.outputFormulaLabel4 = new System.Windows.Forms.Label();
+            this.tourismLabel13 = new System.Windows.Forms.Label();
+            this.calculateUnOccupiedRooms = new System.Windows.Forms.Button();
+            this.outputFormulaLabel5 = new System.Windows.Forms.Label();
+            this.tourismLabel15 = new System.Windows.Forms.Label();
+            this.calculateLeftoverRooms = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.sitePictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).BeginInit();
             this.SuspendLayout();
@@ -164,7 +170,7 @@
             // 
             this.connectToTouristAppButtom.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.connectToTouristAppButtom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.connectToTouristAppButtom.Location = new System.Drawing.Point(38, 502);
+            this.connectToTouristAppButtom.Location = new System.Drawing.Point(38, 577);
             this.connectToTouristAppButtom.Margin = new System.Windows.Forms.Padding(4);
             this.connectToTouristAppButtom.Name = "connectToTouristAppButtom";
             this.connectToTouristAppButtom.Size = new System.Drawing.Size(284, 26);
@@ -179,7 +185,7 @@
             this.connectToOneStopTourismServicesButton.AutoSize = true;
             this.connectToOneStopTourismServicesButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.connectToOneStopTourismServicesButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.connectToOneStopTourismServicesButton.Location = new System.Drawing.Point(39, 465);
+            this.connectToOneStopTourismServicesButton.Location = new System.Drawing.Point(39, 540);
             this.connectToOneStopTourismServicesButton.Margin = new System.Windows.Forms.Padding(4);
             this.connectToOneStopTourismServicesButton.Name = "connectToOneStopTourismServicesButton";
             this.connectToOneStopTourismServicesButton.Size = new System.Drawing.Size(284, 26);
@@ -560,6 +566,84 @@
             this.showFrontButton.UseVisualStyleBackColor = true;
             this.showFrontButton.Click += new System.EventHandler(this.showFrontButton_Click);
             // 
+            // outputFormulaLabel4
+            // 
+            this.outputFormulaLabel4.BackColor = System.Drawing.Color.DarkOrchid;
+            this.outputFormulaLabel4.ForeColor = System.Drawing.Color.White;
+            this.outputFormulaLabel4.Location = new System.Drawing.Point(397, 454);
+            this.outputFormulaLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.outputFormulaLabel4.Name = "outputFormulaLabel4";
+            this.outputFormulaLabel4.Size = new System.Drawing.Size(621, 20);
+            this.outputFormulaLabel4.TabIndex = 86;
+            this.outputFormulaLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // tourismLabel13
+            // 
+            this.tourismLabel13.BackColor = System.Drawing.Color.White;
+            this.tourismLabel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tourismLabel13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tourismLabel13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.tourismLabel13.Location = new System.Drawing.Point(40, 455);
+            this.tourismLabel13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.tourismLabel13.Name = "tourismLabel13";
+            this.tourismLabel13.Size = new System.Drawing.Size(349, 20);
+            this.tourismLabel13.TabIndex = 85;
+            this.tourismLabel13.Text = "Hotel or Lodging Rooms Total:";
+            this.tourismLabel13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // calculateUnOccupiedRooms
+            // 
+            this.calculateUnOccupiedRooms.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.calculateUnOccupiedRooms.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.calculateUnOccupiedRooms.Location = new System.Drawing.Point(1050, 454);
+            this.calculateUnOccupiedRooms.Margin = new System.Windows.Forms.Padding(4);
+            this.calculateUnOccupiedRooms.Name = "calculateUnOccupiedRooms";
+            this.calculateUnOccupiedRooms.Size = new System.Drawing.Size(133, 20);
+            this.calculateUnOccupiedRooms.TabIndex = 87;
+            this.calculateUnOccupiedRooms.Text = "Rooms Unoccupied";
+            this.calculateUnOccupiedRooms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.calculateUnOccupiedRooms.UseVisualStyleBackColor = true;
+            this.calculateUnOccupiedRooms.Click += new System.EventHandler(this.calculateRemainingRooms_Click);
+            // 
+            // outputFormulaLabel5
+            // 
+            this.outputFormulaLabel5.BackColor = System.Drawing.Color.DarkOrchid;
+            this.outputFormulaLabel5.ForeColor = System.Drawing.Color.White;
+            this.outputFormulaLabel5.Location = new System.Drawing.Point(397, 481);
+            this.outputFormulaLabel5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.outputFormulaLabel5.Name = "outputFormulaLabel5";
+            this.outputFormulaLabel5.Size = new System.Drawing.Size(621, 20);
+            this.outputFormulaLabel5.TabIndex = 89;
+            this.outputFormulaLabel5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // tourismLabel15
+            // 
+            this.tourismLabel15.BackColor = System.Drawing.Color.White;
+            this.tourismLabel15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tourismLabel15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tourismLabel15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.tourismLabel15.Location = new System.Drawing.Point(40, 482);
+            this.tourismLabel15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.tourismLabel15.Name = "tourismLabel15";
+            this.tourismLabel15.Size = new System.Drawing.Size(349, 20);
+            this.tourismLabel15.TabIndex = 88;
+            this.tourismLabel15.Text = "Hotel or Lodging Rooms Remainder:";
+            this.tourismLabel15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // calculateLeftoverRooms
+            // 
+            this.calculateLeftoverRooms.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.calculateLeftoverRooms.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.calculateLeftoverRooms.Location = new System.Drawing.Point(1049, 480);
+            this.calculateLeftoverRooms.Margin = new System.Windows.Forms.Padding(4);
+            this.calculateLeftoverRooms.Name = "calculateLeftoverRooms";
+            this.calculateLeftoverRooms.Size = new System.Drawing.Size(133, 20);
+            this.calculateLeftoverRooms.TabIndex = 90;
+            this.calculateLeftoverRooms.Text = "Rooms LeftOver";
+            this.calculateLeftoverRooms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.calculateLeftoverRooms.UseVisualStyleBackColor = true;
+            this.calculateLeftoverRooms.Click += new System.EventHandler(this.calculateLeftoverRooms_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
@@ -567,6 +651,12 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1370, 653);
+            this.Controls.Add(this.calculateLeftoverRooms);
+            this.Controls.Add(this.outputFormulaLabel5);
+            this.Controls.Add(this.tourismLabel15);
+            this.Controls.Add(this.calculateUnOccupiedRooms);
+            this.Controls.Add(this.outputFormulaLabel4);
+            this.Controls.Add(this.tourismLabel13);
             this.Controls.Add(this.showFrontButton);
             this.Controls.Add(this.showBackButton);
             this.Controls.Add(this.sitePictureBox);
@@ -657,6 +747,12 @@
         private System.Windows.Forms.PictureBox sitePictureBox;
         private System.Windows.Forms.Button showBackButton;
         private System.Windows.Forms.Button showFrontButton;
+        private System.Windows.Forms.Label outputFormulaLabel4;
+        private System.Windows.Forms.Label tourismLabel13;
+        private System.Windows.Forms.Button calculateUnOccupiedRooms;
+        private System.Windows.Forms.Label outputFormulaLabel5;
+        private System.Windows.Forms.Label tourismLabel15;
+        private System.Windows.Forms.Button calculateLeftoverRooms;
     }
 }
 
