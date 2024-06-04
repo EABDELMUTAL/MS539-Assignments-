@@ -246,12 +246,12 @@ namespace thedigitalizationprojectproposal
 
         private void calculateLeftoverRooms_Click(object sender, EventArgs e)
         {
-            int occupiedRooms; int roomsTotal;
-            int totalRoomsRemainder;
-            occupiedRooms = int.Parse(occupiedRoomsTotalTextBox.Text);
-            roomsTotal = int.Parse(outputFormulaLabel4.Text);
-            totalRoomsRemainder = (int)(roomsTotal % occupiedRooms);
-            outputFormulaLabel5.Text = totalRoomsRemainder.ToString();
+            //int occupiedRooms; int roomsTotal;
+            //int totalRoomsRemainder;
+            //occupiedRooms = int.Parse(occupiedRoomsTotalTextBox.Text);
+            //roomsTotal = int.Parse(outputFormulaLabel4.Text);
+            //totalRoomsRemainder = (int)(roomsTotal / occupiedRooms);
+            //outputFormulaLabel5.Text = totalRoomsRemainder.ToString();
 
         }
     }
