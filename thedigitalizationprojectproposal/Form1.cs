@@ -253,6 +253,43 @@ namespace thedigitalizationprojectproposal
             //totalRoomsRemainder = (int)(roomsTotal / occupiedRooms);
             //outputFormulaLabel5.Text = totalRoomsRemainder.ToString();
 
+            int modResult = 1500 % 300;
+            outputFormulaLabel5.Text = modResult.ToString();
+
+        }
+
+        private void outputFormulaLabel5_Click(object sender, EventArgs e)
+        {
+            //normal format integer
+            int modResult = 0;
+            MessageBox.Show(modResult.ToString("n"));
+        }
+
+        private void calculateRoomRate_Click(object sender, EventArgs e)
+        {
+            decimal roomAverageRate;      // The Room’s Average Rate
+            decimal discountPercentage;   // The discount percentage
+            decimal discountAmount;       // The amount of discount
+            decimal roomSalesRate;        // The Room’s Sales price
+
+            // Get the room’s average price.
+            roomAverageRate = decimal.Parse(roomAverageRateTextBox.Text);
+
+            // Get the discount percentage.
+            discountPercentage = decimal.Parse(discountPercentageTextBox.Text);
+
+            // Move the percentage's decimal point left two spaces.
+            discountPercentage = discountPercentage / 100;
+
+            // Calculate the amount of the discount.
+            discountAmount = roomAverageRate * discountPercentage;
+
+            // Calculate the sale price.
+            roomSalesRate = roomAverageRate - discountAmount;
+
+            // Display the sale price.
+            outputRoomSalesRateLabel.Text = roomSalesRate.ToString("c");
+
         }
     }
 }
