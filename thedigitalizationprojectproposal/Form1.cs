@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Printing;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -12,6 +14,11 @@ namespace thedigitalizationprojectproposal
 {
     public partial class Form1 : Form
     {
+        private object grossIncome;
+
+        public decimal costOfGoodsSold { get; private set; }
+        public decimal costOfRoomsSold { get; private set; }
+
         public Form1()
         {
             InitializeComponent();
@@ -289,6 +296,124 @@ namespace thedigitalizationprojectproposal
 
             // Display the sale price.
             outputRoomSalesRateLabel.Text = roomSalesRate.ToString("c");
+
+        }
+
+        private void costRoomsSoldTotalLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void calculateCostofRoomsSoldTotal_Click(object sender, EventArgs e)
+        {
+            decimal costRoomsSalesTotal;
+            decimal costRoomsGoodsSoldTotal;
+            decimal costRoomsSoldTotal;
+            costRoomsSalesTotal = decimal.Parse(costRoomsSalesTotalTextBox.Text);
+            costRoomsGoodsSoldTotal = decimal.Parse(costRoomsGoodsSoldTotalTextBox.Text);
+            costRoomsSoldTotal = costRoomsSalesTotal + costRoomsGoodsSoldTotal;
+            outputCostRoomsSoldTotalLabel.Text = costRoomsSoldTotal.ToString();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //decimal averageGrossIncomeTotal;
+            //decimal costOfRoomsSoldTotal;
+            //double annualSalesRevenueEarnedHotelTotal;
+
+            //averageGrossIncomeTotal = decimal.Parse(outputFormulaLabel2.Text);
+            //costOfRoomsSoldTotal = decimal.Parse(outputCostRoomsSoldTotalLabel.Text);
+            //annualSalesRevenueEarnedHotelTotal = ((double)(averageGrossIncomeTotal + costOfRoomsSoldTotal));
+            //outputAnnualRevenueEarnedHotelTotalLabel.Text = annualSalesRevenueEarnedHotelTotal.ToString("c");
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            decimal costRoomsSalesTotal;
+            decimal costRoomsGoodsSoldTotal;
+            decimal costRoomsSoldTotal;
+            costRoomsSalesTotal = decimal.Parse(costRoomsSalesTotalTextBox.Text);
+            costRoomsGoodsSoldTotal = decimal.Parse(costRoomsGoodsSoldTotalTextBox.Text);
+            costRoomsSoldTotal = costRoomsSalesTotal + costRoomsGoodsSoldTotal;
+            outputCostRoomsSoldTotalLabel.Text = costRoomsSoldTotal.ToString();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            decimal costRoomsSalesTotal;
+            decimal costRoomsGoodsSoldTotal;
+            decimal costRoomsSoldTotal;
+            costRoomsSalesTotal = decimal.Parse(costRoomsSalesTotalTextBox.Text);
+            costRoomsGoodsSoldTotal = decimal.Parse(costRoomsGoodsSoldTotalTextBox.Text);
+            costRoomsSoldTotal = costRoomsSalesTotal + costRoomsGoodsSoldTotal;
+            outputCostRoomsSoldTotalLabel.Text = costRoomsSoldTotal.ToString();
+        }
+
+        private void displayOutputRevenue_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void displayOutputRevenue_Click_1(object sender, EventArgs e)
+        {
+            decimal salesRevenueInputTotal;
+            decimal averageGrossIncomeTotal;
+            decimal costOfRoomsSoldTotal;
+            averageGrossIncomeTotal = decimal.Parse(outputFormulaLabel2.Text);
+            costOfRoomsSoldTotal = decimal.Parse(outputCostRoomsSoldTotalLabel.Text);
+            salesRevenueInputTotal = averageGrossIncomeTotal + costOfRoomsSoldTotal;
+            outputAnnualRevenueEarnedHotelTotalLabel1.Text = salesRevenueInputTotal.ToString("c");
+        }
+
+        private void DisplayGrossIncome2_Click_1(object sender, EventArgs e)
+        {
+            
+           // int occupiedRooms;
+            //double averageDailyRates;
+            //double grossIncome; 
+            //occupiedRooms = int.Parse(occupiedRoomsTotalTextBox.Text);
+            //averageDailyRates = double.Parse(averageDailyRoomRatesTextBox.Text);
+            //grossIncome = (occupiedRooms * averageDailyRates);
+            //outputGrossIncomeDisplay.Text = grossIncome.ToString();
+        }
+
+        private void displayGrossIncome2_Click(object sender, EventArgs e)
+        {
+            decimal salesRevenue;
+            decimal costRoomsSalesTotal ;
+            decimal costRoomsGoodsSoldTotal;
+            decimal costOfRoomsSold;
+            decimal grossIncome;
+            salesRevenue = decimal.Parse(salesRevenueTextBox.Text);
+            costRoomsSalesTotal = decimal.Parse(costRoomsSalesTotalTextBox.Text);
+            costRoomsGoodsSoldTotal = decimal.Parse(costRoomsGoodsSoldTotalTextBox.Text);
+            costOfRoomsSold = costRoomsSalesTotal + costRoomsGoodsSoldTotal;
+            grossIncome = salesRevenue - costOfGoodsSold;
+            outputGrossIncomeDisplay.Text = (grossIncome.ToString());
+        }
+
+        private void calculateNetIncomeButton_Click(object sender, EventArgs e)
+        {
+            //decimal salesRevenueInputTotal;
+            //decimal costRoomsSalesTotalTextBox;
+            //decimal costRoomsGoodsSoldTotalTextBox;
+            //decimal costRoomsSoldTotal;
+            //decimal hotelNetOperatingIncome;
+
+            //salesRevenueInputTotal = decimal.Parse(outputAnnualRevenueEarnedHotelTotalLabel.Text);
+            //costRoomsSoldTotal = decimal.Parse(outputCostRoomsSoldTotalLabel.Text);
+
+            //Calculate cost of rooms sold multiply sales revenue input in total to get the net operating income
+            //hotelNetOperatingIncome = (salesRevenueInputTotal - costRoomsSoldTotal);
+
+            //Display net operating income of the Hotel
+            //outputFormulaLabel3.Text = hotelNetOperatingIncome.ToString();
 
         }
     }
