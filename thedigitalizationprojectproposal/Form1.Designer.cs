@@ -86,7 +86,6 @@
             this.tourismLabel17 = new System.Windows.Forms.Label();
             this.tourismLabel18 = new System.Windows.Forms.Label();
             this.calculateCostofRoomsSoldTotal = new System.Windows.Forms.Button();
-            this.calculateSalesRevenueButton = new System.Windows.Forms.Button();
             this.tourismLabel19 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.insertOperatingExpenses = new System.Windows.Forms.Button();
@@ -110,9 +109,10 @@
             this.roomRatesTextBoxY3 = new System.Windows.Forms.TextBox();
             this.roomRatesTextBoxY4 = new System.Windows.Forms.TextBox();
             this.tourismLable1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
+            this.grossIncomeButton = new System.Windows.Forms.Button();
+            this.grossIncomeLabel = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.calculateSalesRevenueButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.sitePictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).BeginInit();
             this.averageRoomRateCalculator.SuspendLayout();
@@ -124,7 +124,7 @@
             this.tourismLabel14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tourismLabel14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tourismLabel14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.tourismLabel14.Location = new System.Drawing.Point(39, 23);
+            this.tourismLabel14.Location = new System.Drawing.Point(39, 22);
             this.tourismLabel14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tourismLabel14.Name = "tourismLabel14";
             this.tourismLabel14.Size = new System.Drawing.Size(338, 24);
@@ -160,10 +160,10 @@
             this.outputLogoLabel.BackColor = System.Drawing.Color.White;
             this.outputLogoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.outputLogoLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.outputLogoLabel.Location = new System.Drawing.Point(1094, 196);
+            this.outputLogoLabel.Location = new System.Drawing.Point(1035, 196);
             this.outputLogoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.outputLogoLabel.Name = "outputLogoLabel";
-            this.outputLogoLabel.Size = new System.Drawing.Size(232, 42);
+            this.outputLogoLabel.Size = new System.Drawing.Size(298, 42);
             this.outputLogoLabel.TabIndex = 72;
             this.outputLogoLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.outputLogoLabel.Click += new System.EventHandler(this.outputLogoLabel_Click);
@@ -192,6 +192,7 @@
             this.calculateNetIncomeButton.TabIndex = 70;
             this.calculateNetIncomeButton.Text = "Net Income";
             this.calculateNetIncomeButton.UseVisualStyleBackColor = true;
+            this.calculateNetIncomeButton.Click += new System.EventHandler(this.calculateNetIncomeButton_Click);
             // 
             // calculateRevenueStreamButton
             // 
@@ -242,7 +243,7 @@
             this.tourismLabel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tourismLabel12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tourismLabel12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.tourismLabel12.Location = new System.Drawing.Point(676, 32);
+            this.tourismLabel12.Location = new System.Drawing.Point(676, 25);
             this.tourismLabel12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tourismLabel12.Name = "tourismLabel12";
             this.tourismLabel12.Size = new System.Drawing.Size(338, 24);
@@ -545,9 +546,9 @@
             // sitePictureBox
             // 
             this.sitePictureBox.Image = global::thedigitalizationprojectproposal.Properties.Resources._20191101_191004302_iOS;
-            this.sitePictureBox.Location = new System.Drawing.Point(1094, 22);
+            this.sitePictureBox.Location = new System.Drawing.Point(1035, 22);
             this.sitePictureBox.Name = "sitePictureBox";
-            this.sitePictureBox.Size = new System.Drawing.Size(232, 168);
+            this.sitePictureBox.Size = new System.Drawing.Size(298, 168);
             this.sitePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.sitePictureBox.TabIndex = 82;
             this.sitePictureBox.TabStop = false;
@@ -555,10 +556,10 @@
             // logoPictureBox
             // 
             this.logoPictureBox.Image = global::thedigitalizationprojectproposal.Properties.Resources.IMG_5738;
-            this.logoPictureBox.Location = new System.Drawing.Point(1094, 22);
+            this.logoPictureBox.Location = new System.Drawing.Point(1035, 22);
             this.logoPictureBox.Margin = new System.Windows.Forms.Padding(4);
             this.logoPictureBox.Name = "logoPictureBox";
-            this.logoPictureBox.Size = new System.Drawing.Size(232, 168);
+            this.logoPictureBox.Size = new System.Drawing.Size(291, 168);
             this.logoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.logoPictureBox.TabIndex = 66;
             this.logoPictureBox.TabStop = false;
@@ -566,7 +567,7 @@
             // showBackButton
             // 
             this.showBackButton.Font = new System.Drawing.Font("Verdana", 8.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.showBackButton.Location = new System.Drawing.Point(1092, 244);
+            this.showBackButton.Location = new System.Drawing.Point(1036, 244);
             this.showBackButton.Name = "showBackButton";
             this.showBackButton.Size = new System.Drawing.Size(75, 24);
             this.showBackButton.TabIndex = 83;
@@ -577,7 +578,7 @@
             // showFrontButton
             // 
             this.showFrontButton.Font = new System.Drawing.Font("Verdana", 8.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.showFrontButton.Location = new System.Drawing.Point(1251, 244);
+            this.showFrontButton.Location = new System.Drawing.Point(1257, 244);
             this.showFrontButton.Name = "showFrontButton";
             this.showFrontButton.Size = new System.Drawing.Size(75, 24);
             this.showFrontButton.TabIndex = 84;
@@ -814,17 +815,6 @@
             this.calculateCostofRoomsSoldTotal.Text = "CORS";
             this.calculateCostofRoomsSoldTotal.UseVisualStyleBackColor = true;
             this.calculateCostofRoomsSoldTotal.Click += new System.EventHandler(this.calculateCostofRoomsSoldTotal_Click);
-            // 
-            // calculateSalesRevenueButton
-            // 
-            this.calculateSalesRevenueButton.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.calculateSalesRevenueButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.calculateSalesRevenueButton.Location = new System.Drawing.Point(882, 446);
-            this.calculateSalesRevenueButton.Name = "calculateSalesRevenueButton";
-            this.calculateSalesRevenueButton.Size = new System.Drawing.Size(132, 21);
-            this.calculateSalesRevenueButton.TabIndex = 112;
-            this.calculateSalesRevenueButton.Text = "Dead Revenue";
-            this.calculateSalesRevenueButton.UseVisualStyleBackColor = true;
             // 
             // tourismLabel19
             // 
@@ -1093,25 +1083,26 @@
             this.tourismLable1.Text = "Price Y4";
             this.tourismLable1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // button1
+            // grossIncomeButton
             // 
-            this.button1.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.button1.Location = new System.Drawing.Point(883, 531);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(132, 21);
-            this.button1.TabIndex = 129;
-            this.button1.Text = "Gross Income";
-            this.button1.UseVisualStyleBackColor = true;
+            this.grossIncomeButton.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grossIncomeButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.grossIncomeButton.Location = new System.Drawing.Point(883, 531);
+            this.grossIncomeButton.Name = "grossIncomeButton";
+            this.grossIncomeButton.Size = new System.Drawing.Size(132, 21);
+            this.grossIncomeButton.TabIndex = 129;
+            this.grossIncomeButton.Text = "Gross Income";
+            this.grossIncomeButton.UseVisualStyleBackColor = true;
+            this.grossIncomeButton.Click += new System.EventHandler(this.grossIncomeButton_Click);
             // 
-            // label2
+            // grossIncomeLabel
             // 
-            this.label2.BackColor = System.Drawing.Color.DarkOrchid;
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(364, 532);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(514, 19);
-            this.label2.TabIndex = 128;
+            this.grossIncomeLabel.BackColor = System.Drawing.Color.DarkOrchid;
+            this.grossIncomeLabel.ForeColor = System.Drawing.Color.White;
+            this.grossIncomeLabel.Location = new System.Drawing.Point(364, 532);
+            this.grossIncomeLabel.Name = "grossIncomeLabel";
+            this.grossIncomeLabel.Size = new System.Drawing.Size(514, 19);
+            this.grossIncomeLabel.TabIndex = 128;
             // 
             // label3
             // 
@@ -1124,6 +1115,17 @@
             this.label3.Text = "Gross Sales Income:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // calculateSalesRevenueButton
+            // 
+            this.calculateSalesRevenueButton.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.calculateSalesRevenueButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.calculateSalesRevenueButton.Location = new System.Drawing.Point(882, 446);
+            this.calculateSalesRevenueButton.Name = "calculateSalesRevenueButton";
+            this.calculateSalesRevenueButton.Size = new System.Drawing.Size(132, 21);
+            this.calculateSalesRevenueButton.TabIndex = 112;
+            this.calculateSalesRevenueButton.Text = "Dead Revenue";
+            this.calculateSalesRevenueButton.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
@@ -1131,8 +1133,8 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1370, 737);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.grossIncomeButton);
+            this.Controls.Add(this.grossIncomeLabel);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.averageRoomRateCalculator);
             this.Controls.Add(this.insertExcessExpensesTextBox);
@@ -1277,7 +1279,6 @@
         private System.Windows.Forms.Label tourismLabel17;
         private System.Windows.Forms.Label tourismLabel18;
         private System.Windows.Forms.Button calculateCostofRoomsSoldTotal;
-        private System.Windows.Forms.Button calculateSalesRevenueButton;
         private System.Windows.Forms.Label tourismLabel19;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button insertOperatingExpenses;
@@ -1301,10 +1302,11 @@
         private System.Windows.Forms.Label priceAverageOutputLabel;
         private System.Windows.Forms.Label tourismLabel22;
         private System.Windows.Forms.Label panelHeaderTitel;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button grossIncomeButton;
+        private System.Windows.Forms.Label grossIncomeLabel;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label roomSalesRateLabel;
+        private System.Windows.Forms.Button calculateSalesRevenueButton;
     }
 }
 

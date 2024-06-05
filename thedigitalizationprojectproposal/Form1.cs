@@ -285,6 +285,34 @@ namespace thedigitalizationprojectproposal
           revenueStream = (decimal)occupiedRooms * averageDailyRates;
           outputAnnualRevenueEarnedHotelTotalLabel1.Text = (revenueStream.ToString("c"));
         
-        } 
+        }
+
+        private void grossIncomeButton_Click(object sender, EventArgs e)
+        {
+
+            decimal revenueStream;
+            decimal costOfRoomsSold;
+            decimal grossIncome;
+            revenueStream = decimal.Parse(outputsalesRevenueTextBox.Text);
+            costOfRoomsSold = decimal.Parse(outputCostRoomsSoldTotalLabel.Text);
+            grossIncome = decimal.Parse(grossIncomeLabel.Text);
+            grossIncome = (revenueStream - costOfRoomsSold);
+            grossIncomeLabel.Text = (grossIncome.ToString("c"));
+
+        }
+
+        private void calculateNetIncomeButton_Click(object sender, EventArgs e)
+        {
+
+            decimal grossIncome;
+            decimal operatingExpenses;
+            decimal netIncome;
+            grossIncome = decimal.Parse(grossIncomeLabel.Text);
+            operatingExpenses = decimal.Parse(insertExcessExpensesTextBox.Text);
+            netIncome = decimal.Parse(outputFormulaLabel3.Text);
+            netIncome = (grossIncome - operatingExpenses);
+            outputFormulaLabel3.Text = netIncome.ToString("c");
+
+        }
     }
 }
