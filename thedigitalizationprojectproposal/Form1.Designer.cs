@@ -172,7 +172,7 @@
             // 
             this.exitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exitButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.exitButton.Location = new System.Drawing.Point(1228, 660);
+            this.exitButton.Location = new System.Drawing.Point(1228, 653);
             this.exitButton.Margin = new System.Windows.Forms.Padding(4);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(104, 20);
@@ -214,7 +214,7 @@
             this.connectToTouristAppButtom.Location = new System.Drawing.Point(38, 639);
             this.connectToTouristAppButtom.Margin = new System.Windows.Forms.Padding(4);
             this.connectToTouristAppButtom.Name = "connectToTouristAppButtom";
-            this.connectToTouristAppButtom.Size = new System.Drawing.Size(284, 26);
+            this.connectToTouristAppButtom.Size = new System.Drawing.Size(287, 26);
             this.connectToTouristAppButtom.TabIndex = 68;
             this.connectToTouristAppButtom.Text = "Connect to One-Stop Tourist Identity ";
             this.connectToTouristAppButtom.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -229,7 +229,7 @@
             this.connectToOneStopTourismServicesButton.Location = new System.Drawing.Point(39, 610);
             this.connectToOneStopTourismServicesButton.Margin = new System.Windows.Forms.Padding(4);
             this.connectToOneStopTourismServicesButton.Name = "connectToOneStopTourismServicesButton";
-            this.connectToOneStopTourismServicesButton.Size = new System.Drawing.Size(284, 26);
+            this.connectToOneStopTourismServicesButton.Size = new System.Drawing.Size(286, 26);
             this.connectToOneStopTourismServicesButton.TabIndex = 67;
             this.connectToOneStopTourismServicesButton.Text = "Connect to One-Stop Tourism Services";
             this.connectToOneStopTourismServicesButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -533,7 +533,7 @@
             // 
             this.clearButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clearButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.clearButton.Location = new System.Drawing.Point(1052, 660);
+            this.clearButton.Location = new System.Drawing.Point(1052, 653);
             this.clearButton.Margin = new System.Windows.Forms.Padding(4);
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(117, 20);
@@ -666,70 +666,78 @@
             // 
             // RoomAverageRateLabel
             // 
+            this.RoomAverageRateLabel.AutoSize = true;
             this.RoomAverageRateLabel.BackColor = System.Drawing.Color.White;
             this.RoomAverageRateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RoomAverageRateLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.RoomAverageRateLabel.Location = new System.Drawing.Point(642, 604);
+            this.RoomAverageRateLabel.Location = new System.Drawing.Point(655, 604);
             this.RoomAverageRateLabel.Name = "RoomAverageRateLabel";
-            this.RoomAverageRateLabel.Size = new System.Drawing.Size(129, 23);
+            this.RoomAverageRateLabel.Size = new System.Drawing.Size(119, 13);
             this.RoomAverageRateLabel.TabIndex = 91;
-            this.RoomAverageRateLabel.Text = "Room Average Rate:";
+            this.RoomAverageRateLabel.Text = "Current Room Rate:";
             this.RoomAverageRateLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // discountPercentageLabel
             // 
+            this.discountPercentageLabel.AutoSize = true;
             this.discountPercentageLabel.BackColor = System.Drawing.Color.White;
             this.discountPercentageLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.discountPercentageLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.discountPercentageLabel.Location = new System.Drawing.Point(639, 631);
+            this.discountPercentageLabel.Location = new System.Drawing.Point(644, 619);
             this.discountPercentageLabel.Name = "discountPercentageLabel";
-            this.discountPercentageLabel.Size = new System.Drawing.Size(132, 23);
+            this.discountPercentageLabel.Size = new System.Drawing.Size(130, 13);
             this.discountPercentageLabel.TabIndex = 92;
             this.discountPercentageLabel.Text = "Discount Percentage:";
             this.discountPercentageLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // roomSalesRateLabel
             // 
+            this.roomSalesRateLabel.AutoSize = true;
             this.roomSalesRateLabel.BackColor = System.Drawing.Color.White;
             this.roomSalesRateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roomSalesRateLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.roomSalesRateLabel.Location = new System.Drawing.Point(662, 658);
+            this.roomSalesRateLabel.Location = new System.Drawing.Point(665, 635);
             this.roomSalesRateLabel.Name = "roomSalesRateLabel";
-            this.roomSalesRateLabel.Size = new System.Drawing.Size(109, 23);
+            this.roomSalesRateLabel.Size = new System.Drawing.Size(109, 13);
             this.roomSalesRateLabel.TabIndex = 93;
             this.roomSalesRateLabel.Text = "Room Sales Rate:";
             this.roomSalesRateLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // roomAverageRateTextBox
             // 
+            this.roomAverageRateTextBox.Font = new System.Drawing.Font("Verdana", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roomAverageRateTextBox.Location = new System.Drawing.Point(777, 604);
+            this.roomAverageRateTextBox.Multiline = true;
             this.roomAverageRateTextBox.Name = "roomAverageRateTextBox";
-            this.roomAverageRateTextBox.Size = new System.Drawing.Size(100, 23);
+            this.roomAverageRateTextBox.Size = new System.Drawing.Size(100, 13);
             this.roomAverageRateTextBox.TabIndex = 94;
             // 
             // discountPercentageTextBox
             // 
-            this.discountPercentageTextBox.Location = new System.Drawing.Point(777, 631);
+            this.discountPercentageTextBox.Font = new System.Drawing.Font("Verdana", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.discountPercentageTextBox.Location = new System.Drawing.Point(777, 619);
+            this.discountPercentageTextBox.Multiline = true;
             this.discountPercentageTextBox.Name = "discountPercentageTextBox";
-            this.discountPercentageTextBox.Size = new System.Drawing.Size(100, 23);
+            this.discountPercentageTextBox.Size = new System.Drawing.Size(100, 13);
             this.discountPercentageTextBox.TabIndex = 95;
             // 
             // outputRoomSalesRateLabel
             // 
             this.outputRoomSalesRateLabel.BackColor = System.Drawing.Color.White;
+            this.outputRoomSalesRateLabel.Font = new System.Drawing.Font("Verdana", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.outputRoomSalesRateLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.outputRoomSalesRateLabel.Location = new System.Drawing.Point(778, 658);
+            this.outputRoomSalesRateLabel.Location = new System.Drawing.Point(777, 634);
             this.outputRoomSalesRateLabel.Name = "outputRoomSalesRateLabel";
-            this.outputRoomSalesRateLabel.Size = new System.Drawing.Size(98, 23);
+            this.outputRoomSalesRateLabel.Size = new System.Drawing.Size(98, 13);
             this.outputRoomSalesRateLabel.TabIndex = 96;
             // 
             // calculateRoomRate
             // 
             this.calculateRoomRate.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.calculateRoomRate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.calculateRoomRate.Location = new System.Drawing.Point(884, 659);
+            this.calculateRoomRate.Location = new System.Drawing.Point(777, 653);
             this.calculateRoomRate.Name = "calculateRoomRate";
-            this.calculateRoomRate.Size = new System.Drawing.Size(132, 20);
+            this.calculateRoomRate.Size = new System.Drawing.Size(100, 20);
             this.calculateRoomRate.TabIndex = 97;
             this.calculateRoomRate.Text = "Calculate";
             this.calculateRoomRate.UseVisualStyleBackColor = true;
@@ -1257,7 +1265,6 @@
         private System.Windows.Forms.Label tourismLabel15;
         private System.Windows.Forms.Button calculateLeftoverRooms;
         private System.Windows.Forms.Label discountPercentageLabel;
-        private System.Windows.Forms.Label roomSalesRateLabel;
         private System.Windows.Forms.TextBox roomAverageRateTextBox;
         private System.Windows.Forms.TextBox discountPercentageTextBox;
         private System.Windows.Forms.Label outputRoomSalesRateLabel;
@@ -1297,6 +1304,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label roomSalesRateLabel;
     }
 }
 
