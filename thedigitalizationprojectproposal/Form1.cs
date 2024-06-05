@@ -1,10 +1,12 @@
-﻿using System;
+﻿using Aspose.Pdf.Operators;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Drawing.Printing;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
@@ -274,7 +276,15 @@ namespace thedigitalizationprojectproposal
 
         private void displayOutputRevenue_Click(object sender, EventArgs e)
         {
-
-        }
+         
+          int occupiedRooms;
+          decimal averageDailyRates;
+          decimal revenueStream;
+          occupiedRooms = int.Parse(occupiedRoomsTotalTextBox.Text);
+          averageDailyRates = decimal.Parse(averageDailyRoomRatesTextBox.Text);
+          revenueStream = (decimal)occupiedRooms * averageDailyRates;
+          outputAnnualRevenueEarnedHotelTotalLabel1.Text = (revenueStream.ToString("c"));
+        
+        } 
     }
 }
