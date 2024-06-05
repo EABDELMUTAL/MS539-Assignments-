@@ -34,7 +34,7 @@
             this.outputLogoLabel = new System.Windows.Forms.Label();
             this.exitButton = new System.Windows.Forms.Button();
             this.calculateNetIncomeButton = new System.Windows.Forms.Button();
-            this.calculateGrossIncomeButton = new System.Windows.Forms.Button();
+            this.calculateRevenueStreamButton = new System.Windows.Forms.Button();
             this.connectToTouristAppButtom = new System.Windows.Forms.Button();
             this.connectToOneStopTourismServicesButton = new System.Windows.Forms.Button();
             this.tourismLabel12 = new System.Windows.Forms.Label();
@@ -97,7 +97,8 @@
             this.outputAnnualRevenueEarnedHotelTotalLabel1 = new System.Windows.Forms.Label();
             this.outputsalesRevenueTextBox = new System.Windows.Forms.TextBox();
             this.insertExcessExpensesTextBox = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.averageRoomRateCalculator = new System.Windows.Forms.Panel();
+            this.panelHeaderTitel = new System.Windows.Forms.Label();
             this.priceAverageOutputLabel = new System.Windows.Forms.Label();
             this.tourismLabel22 = new System.Windows.Forms.Label();
             this.tourismLabel23 = new System.Windows.Forms.Label();
@@ -111,7 +112,7 @@
             this.tourismLable1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.sitePictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.averageRoomRateCalculator.SuspendLayout();
             this.SuspendLayout();
             // 
             // tourismLabel14
@@ -168,7 +169,7 @@
             // 
             this.exitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exitButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.exitButton.Location = new System.Drawing.Point(1228, 661);
+            this.exitButton.Location = new System.Drawing.Point(1228, 652);
             this.exitButton.Margin = new System.Windows.Forms.Padding(4);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(104, 20);
@@ -189,19 +190,19 @@
             this.calculateNetIncomeButton.Text = "Net Income";
             this.calculateNetIncomeButton.UseVisualStyleBackColor = true;
             // 
-            // calculateGrossIncomeButton
+            // calculateRevenueStreamButton
             // 
-            this.calculateGrossIncomeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.calculateGrossIncomeButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.calculateGrossIncomeButton.Location = new System.Drawing.Point(1036, 332);
-            this.calculateGrossIncomeButton.Margin = new System.Windows.Forms.Padding(4);
-            this.calculateGrossIncomeButton.Name = "calculateGrossIncomeButton";
-            this.calculateGrossIncomeButton.Size = new System.Drawing.Size(133, 20);
-            this.calculateGrossIncomeButton.TabIndex = 69;
-            this.calculateGrossIncomeButton.Text = "Gross Income";
-            this.calculateGrossIncomeButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.calculateGrossIncomeButton.UseVisualStyleBackColor = true;
-            this.calculateGrossIncomeButton.Click += new System.EventHandler(this.calculateGrossIncomeButton_Click_1);
+            this.calculateRevenueStreamButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.calculateRevenueStreamButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.calculateRevenueStreamButton.Location = new System.Drawing.Point(1036, 332);
+            this.calculateRevenueStreamButton.Margin = new System.Windows.Forms.Padding(4);
+            this.calculateRevenueStreamButton.Name = "calculateRevenueStreamButton";
+            this.calculateRevenueStreamButton.Size = new System.Drawing.Size(133, 20);
+            this.calculateRevenueStreamButton.TabIndex = 69;
+            this.calculateRevenueStreamButton.Text = "Revenue Stream";
+            this.calculateRevenueStreamButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.calculateRevenueStreamButton.UseVisualStyleBackColor = true;
+            this.calculateRevenueStreamButton.Click += new System.EventHandler(this.calculateRevenueStreamButton_Click);
             // 
             // connectToTouristAppButtom
             // 
@@ -353,8 +354,8 @@
             this.tourismLabel10.Name = "tourismLabel10";
             this.tourismLabel10.Size = new System.Drawing.Size(366, 20);
             this.tourismLabel10.TabIndex = 56;
-            this.tourismLabel10.Text = "Hotel or Lodging Average Gross Income calculated:";
-            this.tourismLabel10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.tourismLabel10.Text = "Hotel or Lodging Average or Equal Figure Revenue Stream:";
+            this.tourismLabel10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // occupiedRoomsTotalTextBox
             // 
@@ -529,7 +530,7 @@
             // 
             this.clearButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clearButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.clearButton.Location = new System.Drawing.Point(1052, 661);
+            this.clearButton.Location = new System.Drawing.Point(1052, 653);
             this.clearButton.Margin = new System.Windows.Forms.Padding(4);
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(117, 20);
@@ -921,32 +922,44 @@
             this.insertExcessExpensesTextBox.Size = new System.Drawing.Size(514, 21);
             this.insertExcessExpensesTextBox.TabIndex = 125;
             // 
-            // panel1
+            // averageRoomRateCalculator
             // 
-            this.panel1.BackColor = System.Drawing.Color.MediumAquamarine;
-            this.panel1.Controls.Add(this.priceAverageOutputLabel);
-            this.panel1.Controls.Add(this.tourismLabel22);
-            this.panel1.Controls.Add(this.tourismLabel23);
-            this.panel1.Controls.Add(this.tourismLabel21);
-            this.panel1.Controls.Add(this.exitButton1);
-            this.panel1.Controls.Add(this.clearButton1);
-            this.panel1.Controls.Add(this.calculateAverageRoomRates);
-            this.panel1.Controls.Add(this.roomRatesTextBoxY2);
-            this.panel1.Controls.Add(this.roomRatesTextBoxY3);
-            this.panel1.Controls.Add(this.roomRatesTextBoxY4);
-            this.panel1.Controls.Add(this.tourismLable1);
-            this.panel1.ForeColor = System.Drawing.Color.Red;
-            this.panel1.Location = new System.Drawing.Point(1036, 423);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(296, 171);
-            this.panel1.TabIndex = 126;
+            this.averageRoomRateCalculator.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.averageRoomRateCalculator.Controls.Add(this.panelHeaderTitel);
+            this.averageRoomRateCalculator.Controls.Add(this.priceAverageOutputLabel);
+            this.averageRoomRateCalculator.Controls.Add(this.tourismLabel22);
+            this.averageRoomRateCalculator.Controls.Add(this.tourismLabel23);
+            this.averageRoomRateCalculator.Controls.Add(this.tourismLabel21);
+            this.averageRoomRateCalculator.Controls.Add(this.exitButton1);
+            this.averageRoomRateCalculator.Controls.Add(this.clearButton1);
+            this.averageRoomRateCalculator.Controls.Add(this.calculateAverageRoomRates);
+            this.averageRoomRateCalculator.Controls.Add(this.roomRatesTextBoxY2);
+            this.averageRoomRateCalculator.Controls.Add(this.roomRatesTextBoxY3);
+            this.averageRoomRateCalculator.Controls.Add(this.roomRatesTextBoxY4);
+            this.averageRoomRateCalculator.Controls.Add(this.tourismLable1);
+            this.averageRoomRateCalculator.ForeColor = System.Drawing.Color.Red;
+            this.averageRoomRateCalculator.Location = new System.Drawing.Point(1036, 423);
+            this.averageRoomRateCalculator.Name = "averageRoomRateCalculator";
+            this.averageRoomRateCalculator.Size = new System.Drawing.Size(296, 171);
+            this.averageRoomRateCalculator.TabIndex = 126;
+            // 
+            // panelHeaderTitel
+            // 
+            this.panelHeaderTitel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.panelHeaderTitel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panelHeaderTitel.Location = new System.Drawing.Point(16, 14);
+            this.panelHeaderTitel.Name = "panelHeaderTitel";
+            this.panelHeaderTitel.Size = new System.Drawing.Size(267, 19);
+            this.panelHeaderTitel.TabIndex = 13;
+            this.panelHeaderTitel.Text = "Average Room Rates Calculator";
+            this.panelHeaderTitel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // priceAverageOutputLabel
             // 
             this.priceAverageOutputLabel.BackColor = System.Drawing.Color.White;
             this.priceAverageOutputLabel.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.priceAverageOutputLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.priceAverageOutputLabel.Location = new System.Drawing.Point(168, 97);
+            this.priceAverageOutputLabel.Location = new System.Drawing.Point(168, 109);
             this.priceAverageOutputLabel.Name = "priceAverageOutputLabel";
             this.priceAverageOutputLabel.Size = new System.Drawing.Size(115, 19);
             this.priceAverageOutputLabel.TabIndex = 12;
@@ -957,7 +970,7 @@
             this.tourismLabel22.BackColor = System.Drawing.Color.White;
             this.tourismLabel22.Font = new System.Drawing.Font("Verdana", 7.3F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tourismLabel22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.tourismLabel22.Location = new System.Drawing.Point(16, 98);
+            this.tourismLabel22.Location = new System.Drawing.Point(16, 110);
             this.tourismLabel22.Name = "tourismLabel22";
             this.tourismLabel22.Size = new System.Drawing.Size(131, 19);
             this.tourismLabel22.TabIndex = 11;
@@ -969,7 +982,7 @@
             this.tourismLabel23.BackColor = System.Drawing.Color.White;
             this.tourismLabel23.Font = new System.Drawing.Font("Verdana", 7.3F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tourismLabel23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.tourismLabel23.Location = new System.Drawing.Point(17, 70);
+            this.tourismLabel23.Location = new System.Drawing.Point(17, 86);
             this.tourismLabel23.Name = "tourismLabel23";
             this.tourismLabel23.Size = new System.Drawing.Size(130, 19);
             this.tourismLabel23.TabIndex = 10;
@@ -981,7 +994,7 @@
             this.tourismLabel21.BackColor = System.Drawing.Color.White;
             this.tourismLabel21.Font = new System.Drawing.Font("Verdana", 7.3F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tourismLabel21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.tourismLabel21.Location = new System.Drawing.Point(17, 44);
+            this.tourismLabel21.Location = new System.Drawing.Point(17, 63);
             this.tourismLabel21.Name = "tourismLabel21";
             this.tourismLabel21.Size = new System.Drawing.Size(129, 19);
             this.tourismLabel21.TabIndex = 9;
@@ -1028,7 +1041,7 @@
             // 
             this.roomRatesTextBoxY2.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roomRatesTextBoxY2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.roomRatesTextBoxY2.Location = new System.Drawing.Point(168, 69);
+            this.roomRatesTextBoxY2.Location = new System.Drawing.Point(168, 85);
             this.roomRatesTextBoxY2.Multiline = true;
             this.roomRatesTextBoxY2.Name = "roomRatesTextBoxY2";
             this.roomRatesTextBoxY2.Size = new System.Drawing.Size(115, 20);
@@ -1037,7 +1050,7 @@
             // roomRatesTextBoxY3
             // 
             this.roomRatesTextBoxY3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.roomRatesTextBoxY3.Location = new System.Drawing.Point(168, 42);
+            this.roomRatesTextBoxY3.Location = new System.Drawing.Point(168, 62);
             this.roomRatesTextBoxY3.Multiline = true;
             this.roomRatesTextBoxY3.Name = "roomRatesTextBoxY3";
             this.roomRatesTextBoxY3.Size = new System.Drawing.Size(115, 19);
@@ -1046,7 +1059,7 @@
             // roomRatesTextBoxY4
             // 
             this.roomRatesTextBoxY4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.roomRatesTextBoxY4.Location = new System.Drawing.Point(168, 15);
+            this.roomRatesTextBoxY4.Location = new System.Drawing.Point(168, 39);
             this.roomRatesTextBoxY4.Multiline = true;
             this.roomRatesTextBoxY4.Name = "roomRatesTextBoxY4";
             this.roomRatesTextBoxY4.Size = new System.Drawing.Size(115, 19);
@@ -1057,7 +1070,7 @@
             this.tourismLable1.BackColor = System.Drawing.Color.White;
             this.tourismLable1.Font = new System.Drawing.Font("Verdana", 7.3F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tourismLable1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.tourismLable1.Location = new System.Drawing.Point(18, 16);
+            this.tourismLable1.Location = new System.Drawing.Point(18, 39);
             this.tourismLable1.Name = "tourismLable1";
             this.tourismLable1.Size = new System.Drawing.Size(128, 19);
             this.tourismLable1.TabIndex = 0;
@@ -1070,8 +1083,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(1370, 749);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(1370, 737);
+            this.Controls.Add(this.averageRoomRateCalculator);
             this.Controls.Add(this.insertExcessExpensesTextBox);
             this.Controls.Add(this.outputsalesRevenueTextBox);
             this.Controls.Add(this.outputAnnualRevenueEarnedHotelTotalLabel1);
@@ -1113,7 +1126,7 @@
             this.Controls.Add(this.outputLogoLabel);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.calculateNetIncomeButton);
-            this.Controls.Add(this.calculateGrossIncomeButton);
+            this.Controls.Add(this.calculateRevenueStreamButton);
             this.Controls.Add(this.connectToTouristAppButtom);
             this.Controls.Add(this.connectToOneStopTourismServicesButton);
             this.Controls.Add(this.logoPictureBox);
@@ -1148,8 +1161,8 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.sitePictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.averageRoomRateCalculator.ResumeLayout(false);
+            this.averageRoomRateCalculator.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1163,7 +1176,7 @@
         private System.Windows.Forms.Label outputLogoLabel;
         private System.Windows.Forms.Button exitButton;
         private System.Windows.Forms.Button calculateNetIncomeButton;
-        private System.Windows.Forms.Button calculateGrossIncomeButton;
+        private System.Windows.Forms.Button calculateRevenueStreamButton;
         private System.Windows.Forms.Button connectToTouristAppButtom;
         private System.Windows.Forms.Button connectToOneStopTourismServicesButton;
         private System.Windows.Forms.PictureBox logoPictureBox;
@@ -1226,7 +1239,7 @@
         private System.Windows.Forms.Label outputAnnualRevenueEarnedHotelTotalLabel1;
         private System.Windows.Forms.TextBox outputsalesRevenueTextBox;
         private System.Windows.Forms.TextBox insertExcessExpensesTextBox;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel averageRoomRateCalculator;
         private System.Windows.Forms.Button exitButton1;
         private System.Windows.Forms.Button clearButton1;
         private System.Windows.Forms.Button calculateAverageRoomRates;
@@ -1238,6 +1251,7 @@
         private System.Windows.Forms.Label tourismLabel21;
         private System.Windows.Forms.Label priceAverageOutputLabel;
         private System.Windows.Forms.Label tourismLabel22;
+        private System.Windows.Forms.Label panelHeaderTitel;
     }
 }
 
