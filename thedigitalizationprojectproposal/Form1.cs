@@ -15,6 +15,7 @@ namespace thedigitalizationprojectproposal
     public partial class Form1 : Form
     {
         private object grossIncome;
+        private object outputAnnualRevenueEarnedHotelTotalLabel;
 
         public decimal costOfGoodsSold { get; private set; }
         public decimal costOfRoomsSold { get; private set; }
@@ -27,11 +28,6 @@ namespace thedigitalizationprojectproposal
         private void Form1_Load(object sender, EventArgs e)
         {
 
-        }
-
-        private void calculateGrossIncomeButton_Click(object sender, EventArgs e)
-        {
-            
         }
 
         private void connectToOneStopTourismServicesButton_Click(object sender, EventArgs e)
@@ -167,24 +163,10 @@ namespace thedigitalizationprojectproposal
             costRoomsSalesTotal = decimal.Parse(costRoomsSalesTotalTextBox.Text);
             costRoomsGoodsSoldTotal = decimal.Parse(costRoomsGoodsSoldTotalTextBox.Text);
             costRoomsSoldTotal = costRoomsSalesTotal + costRoomsGoodsSoldTotal;
-            outputCostRoomsSoldTotalLabel.Text = costRoomsSoldTotal.ToString();
+            outputCostRoomsSoldTotalLabel.Text = (costRoomsSoldTotal.ToString("c"));
         }
 
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            //decimal averageGrossIncomeTotal;
-            //decimal costOfRoomsSoldTotal;
-            //double annualSalesRevenueEarnedHotelTotal;
-
-            //averageGrossIncomeTotal = decimal.Parse(outputFormulaLabel2.Text);
-            //costOfRoomsSoldTotal = decimal.Parse(outputCostRoomsSoldTotalLabel.Text);
-            //annualSalesRevenueEarnedHotelTotal = ((double)(averageGrossIncomeTotal + costOfRoomsSoldTotal));
-            //outputAnnualRevenueEarnedHotelTotalLabel.Text = annualSalesRevenueEarnedHotelTotal.ToString("c");
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
+        private void calculateCostOfRoomsSoldTotal1_Click(object sender, EventArgs e)
         {
             decimal costRoomsSalesTotal;
             decimal costRoomsGoodsSoldTotal;
@@ -192,10 +174,10 @@ namespace thedigitalizationprojectproposal
             costRoomsSalesTotal = decimal.Parse(costRoomsSalesTotalTextBox.Text);
             costRoomsGoodsSoldTotal = decimal.Parse(costRoomsGoodsSoldTotalTextBox.Text);
             costRoomsSoldTotal = costRoomsSalesTotal + costRoomsGoodsSoldTotal;
-            outputCostRoomsSoldTotalLabel.Text = costRoomsSoldTotal.ToString();
+            outputCostRoomsSoldTotalLabel.Text = (costRoomsSoldTotal.ToString("c"));
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void calculateCostOfRoomsSoldTotal2_Click(object sender, EventArgs e)
         {
             decimal costRoomsSalesTotal;
             decimal costRoomsGoodsSoldTotal;
@@ -203,72 +185,87 @@ namespace thedigitalizationprojectproposal
             costRoomsSalesTotal = decimal.Parse(costRoomsSalesTotalTextBox.Text);
             costRoomsGoodsSoldTotal = decimal.Parse(costRoomsGoodsSoldTotalTextBox.Text);
             costRoomsSoldTotal = costRoomsSalesTotal + costRoomsGoodsSoldTotal;
-            outputCostRoomsSoldTotalLabel.Text = costRoomsSoldTotal.ToString();
-        }
-
-        private void displayOutputRevenue_Click_1(object sender, EventArgs e)
-        {
-            decimal salesRevenueInputTotal;
-            decimal averageGrossIncomeTotal;
-            decimal costOfRoomsSoldTotal;
-            averageGrossIncomeTotal = decimal.Parse(outputFormulaLabel2.Text);
-            costOfRoomsSoldTotal = decimal.Parse(outputCostRoomsSoldTotalLabel.Text);
-            salesRevenueInputTotal = averageGrossIncomeTotal + costOfRoomsSoldTotal;
-            outputAnnualRevenueEarnedHotelTotalLabel1.Text = salesRevenueInputTotal.ToString("c");
-
-        }
-        private void displayGrossIncome2_Click(object sender, EventArgs e)
-        {
-
-            decimal salesRevenue = decimal.Parse(salesRevenueTextBox.Text);
-            decimal roomsSalesTotal = decimal.Parse(costRoomsSalesTotalTextBox.Text);
-            decimal roomsGoodsSoldTotal = decimal.Parse(costRoomsGoodsSoldTotalTextBox.Text);
-            decimal costOfRoomsSold = roomsSalesTotal + roomsGoodsSoldTotal;
-            decimal grossIncome = salesRevenue - costOfRoomsSold;
-            outputGrossIncomeDisplay.Text = (grossIncome.ToString());
-        }
-
-        private void calculateNetIncomeButton_Click(object sender, EventArgs e)
-        {
-            //decimal salesRevenueInputTotal;
-            //decimal costRoomsSalesTotalTextBox;
-            //decimal costRoomsGoodsSoldTotalTextBox;
-            //decimal costRoomsSoldTotal;
-            //decimal hotelNetOperatingIncome;
-
-            //salesRevenueInputTotal = decimal.Parse(outputAnnualRevenueEarnedHotelTotalLabel.Text);
-            //costRoomsSoldTotal = decimal.Parse(outputCostRoomsSoldTotalLabel.Text);
-
-            //Calculate cost of rooms sold multiply sales revenue input in total to get the net operating income
-            //hotelNetOperatingIncome = (salesRevenueInputTotal - costRoomsSoldTotal);
-
-            //Display net operating income of the Hotel
-            //outputFormulaLabel3.Text = hotelNetOperatingIncome.ToString();
-
+            outputCostRoomsSoldTotalLabel.Text = (costRoomsSoldTotal.ToString("c"));
         }
 
         private void calculateGrossIncomeButton_Click_1(object sender, EventArgs e)
         {
 
-            
             int occupiedRooms;
             decimal averageDailyRates;
             decimal grossIncome;
             occupiedRooms = int.Parse(occupiedRoomsTotalTextBox.Text);
             averageDailyRates = decimal.Parse(averageDailyRoomRatesTextBox.Text);
             grossIncome = (decimal)occupiedRooms * averageDailyRates;
-            outputFormulaLabel2.Text = grossIncome.ToString();
+            outputFormulaLabel2.Text = (grossIncome.ToString("c"));
 
+            //
             String message;
-            message = "It must be a double value in Gross Income" + " " + "Thank your for telling us your estimation";
+            message = "It must be your Gross Income is great" + " " + "Thank your for telling us your estimation";
             MessageBox.Show(message.ToString());
 
+            //
             decimal amount = 0;
             MessageBox.Show(amount.ToString("c"));
 
+            ///
             //decimal grossIncome = 00;
             //outputFormulaLabel2.Text = grossIncome.ToString();
 
+        }
+
+        private void insertOperatingExpenses_Click(object sender, EventArgs e)
+        {
+            decimal operatingExpenses;
+            operatingExpenses = decimal.Parse(insertExcessExpensesTextBox.Text);
+            insertExcessExpensesTextBox.Text = (operatingExpenses.ToString("c"));
+
+        }
+
+        private void calculateAverageRoomRates_Click(object sender, EventArgs e)
+        {
+             {
+             try
+            {
+                double roomRateYear1;    // To hold room rates year #1
+                double roomRateYear2;    // To hold room rates year #2
+                double roomRateYear3;    // To hold room rates year #3
+                double averageRoomRates; // To hold the average room rates for market research, competition, standards and best price practice  
+
+                // Get the three test scores.
+                roomRateYear3 = double.Parse(roomRatesTextBoxY4.Text);
+                roomRateYear2 = double.Parse(roomRatesTextBoxY3.Text);
+                roomRateYear1 = double.Parse(roomRatesTextBoxY2.Text);
+
+                // Calculate the average test score.
+                averageRoomRates = (roomRateYear3 + roomRateYear2 + roomRateYear1) / 3.0;
+
+                // Display the average test score, with
+                //The program instruction has rounded the                  
+                //output to 1 decimal point
+                priceAverageOutputLabel.Text = averageRoomRates.ToString("n1");
+
+                 }
+               catch (Exception ex)
+                {
+                // Display the default error message.
+                MessageBox.Show(ex.Message);
+                }
+            }
+        }
+
+        private void clearButton1_Click(object sender, EventArgs e)
+        {
+            roomRatesTextBoxY4.Text = "";
+            roomRatesTextBoxY3.Text = "";
+            roomRatesTextBoxY2.Text = "";
+            priceAverageOutputLabel.Text = "";
+        }
+
+        private void exitButton1_Click(object sender, EventArgs e)
+        {
+           //Close the panel form
+            this.Close();
         }
     }
 }
