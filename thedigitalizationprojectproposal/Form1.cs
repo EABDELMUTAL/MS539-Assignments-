@@ -29,73 +29,9 @@ namespace thedigitalizationprojectproposal
 
         }
 
-        private void hotelOrLodgingTextBox_TextChanged(object sender, EventArgs e)
+        private void calculateGrossIncomeButton_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void tourismLabel2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tourismLabel3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tourismLabel4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tourismLabel5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tourismLabel6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tourismLabel7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tourismLabel8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tourismLabel9_Click(object sender, EventArgs e)
-        {
-            //
-        }
-
-        private void outputFormulaLabel2_Click(object sender, EventArgs e)
-        {
-            double grossIncome = 00.00;
-            outputFormulaLabel2.Text = grossIncome.ToString();
-
-            String message;
-            message = "It must be a double value in Gross Income" + " " + "Thank your for telling us your estimation";
-            MessageBox.Show(message.ToString());
-
-            double amount = 93000;
-            MessageBox.Show(amount.ToString("c"));
-
-        }
-
-        private void tourismLabel10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tourismLabel11_Click(object sender, EventArgs e)
-        {
-
+            
         }
 
         private void connectToOneStopTourismServicesButton_Click(object sender, EventArgs e)
@@ -111,62 +47,6 @@ namespace thedigitalizationprojectproposal
             MessageBox.Show("Yeah tourism components can connect to the Worldwide One-Stop Tourist Identity web gate application in here!");
         }
 
-        private void locationAddressTextBox_TextChanged(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void doubleRoomsOccupiedTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void singleRoomsOccupiedTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void classificationStandardsTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void hotelStandardRatesTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void occupiedRoomsTotalTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void averageDailyRoomRatesTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void outputHotelOrLodgingLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tourismLabel1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void outputFormulaLabel3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-           //int hotel = 4000;
-           //
-        }
-
         private void communicateArticleDescriptionButton_Click(object sender, EventArgs e)
         {
             string hotelOrLodgingArticleDescription;
@@ -174,26 +54,6 @@ namespace thedigitalizationprojectproposal
             outputHotelOrLodgingLabel.Text = hotelOrLodgingArticleDescription;
 
             MessageBox.Show(hotelOrLodgingArticleDescription);
-
-        }
-
-        private void calculateGrossIncomeButton_Click(object sender, EventArgs e)
-        { 
-            //to hold rooms number filled compared to total available roooms
-            int occupiedRooms;
-            //to hold rates used and take the average
-            double averageDailyRates;
-            //get the average gross income in that case before calculating
-            //the gross revenue and assign to grossIncome
-            double grossIncome;
-            //get the rooms occupied in whole number and assign it to the occupied rooms variable 
-            occupiedRooms = int.Parse(occupiedRoomsTotalTextBox.Text);
-            //get the average daily rates in real Number and assign it to the average daily rates variable 
-            averageDailyRates = double.Parse(averageDailyRoomRatesTextBox.Text);
-            //Calculate gross Income
-            grossIncome = (int)occupiedRooms * averageDailyRates;
-            //display the grossIncome in the outputFormulaLabel2 control
-            outputFormulaLabel2.Text = grossIncome.ToString();
 
         }
 
@@ -299,11 +159,6 @@ namespace thedigitalizationprojectproposal
 
         }
 
-        private void costRoomsSoldTotalLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void calculateCostofRoomsSoldTotal_Click(object sender, EventArgs e)
         {
             decimal costRoomsSalesTotal;
@@ -315,10 +170,6 @@ namespace thedigitalizationprojectproposal
             outputCostRoomsSoldTotalLabel.Text = costRoomsSoldTotal.ToString();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -355,11 +206,6 @@ namespace thedigitalizationprojectproposal
             outputCostRoomsSoldTotalLabel.Text = costRoomsSoldTotal.ToString();
         }
 
-        private void displayOutputRevenue_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void displayOutputRevenue_Click_1(object sender, EventArgs e)
         {
             decimal salesRevenueInputTotal;
@@ -369,32 +215,16 @@ namespace thedigitalizationprojectproposal
             costOfRoomsSoldTotal = decimal.Parse(outputCostRoomsSoldTotalLabel.Text);
             salesRevenueInputTotal = averageGrossIncomeTotal + costOfRoomsSoldTotal;
             outputAnnualRevenueEarnedHotelTotalLabel1.Text = salesRevenueInputTotal.ToString("c");
-        }
 
-        private void DisplayGrossIncome2_Click_1(object sender, EventArgs e)
-        {
-            
-           // int occupiedRooms;
-            //double averageDailyRates;
-            //double grossIncome; 
-            //occupiedRooms = int.Parse(occupiedRoomsTotalTextBox.Text);
-            //averageDailyRates = double.Parse(averageDailyRoomRatesTextBox.Text);
-            //grossIncome = (occupiedRooms * averageDailyRates);
-            //outputGrossIncomeDisplay.Text = grossIncome.ToString();
         }
-
         private void displayGrossIncome2_Click(object sender, EventArgs e)
         {
-            decimal salesRevenue;
-            decimal costRoomsSalesTotal ;
-            decimal costRoomsGoodsSoldTotal;
-            decimal costOfRoomsSold;
-            decimal grossIncome;
-            salesRevenue = decimal.Parse(salesRevenueTextBox.Text);
-            costRoomsSalesTotal = decimal.Parse(costRoomsSalesTotalTextBox.Text);
-            costRoomsGoodsSoldTotal = decimal.Parse(costRoomsGoodsSoldTotalTextBox.Text);
-            costOfRoomsSold = costRoomsSalesTotal + costRoomsGoodsSoldTotal;
-            grossIncome = salesRevenue - costOfGoodsSold;
+
+            decimal salesRevenue = decimal.Parse(salesRevenueTextBox.Text);
+            decimal roomsSalesTotal = decimal.Parse(costRoomsSalesTotalTextBox.Text);
+            decimal roomsGoodsSoldTotal = decimal.Parse(costRoomsGoodsSoldTotalTextBox.Text);
+            decimal costOfRoomsSold = roomsSalesTotal + roomsGoodsSoldTotal;
+            decimal grossIncome = salesRevenue - costOfRoomsSold;
             outputGrossIncomeDisplay.Text = (grossIncome.ToString());
         }
 
@@ -414,6 +244,30 @@ namespace thedigitalizationprojectproposal
 
             //Display net operating income of the Hotel
             //outputFormulaLabel3.Text = hotelNetOperatingIncome.ToString();
+
+        }
+
+        private void calculateGrossIncomeButton_Click_1(object sender, EventArgs e)
+        {
+
+            
+            int occupiedRooms;
+            decimal averageDailyRates;
+            decimal grossIncome;
+            occupiedRooms = int.Parse(occupiedRoomsTotalTextBox.Text);
+            averageDailyRates = decimal.Parse(averageDailyRoomRatesTextBox.Text);
+            grossIncome = (decimal)occupiedRooms * averageDailyRates;
+            outputFormulaLabel2.Text = grossIncome.ToString();
+
+            String message;
+            message = "It must be a double value in Gross Income" + " " + "Thank your for telling us your estimation";
+            MessageBox.Show(message.ToString());
+
+            decimal amount = 0;
+            MessageBox.Show(amount.ToString("c"));
+
+            //decimal grossIncome = 00;
+            //outputFormulaLabel2.Text = grossIncome.ToString();
 
         }
     }
