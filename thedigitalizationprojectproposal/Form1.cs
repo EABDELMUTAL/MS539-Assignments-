@@ -190,28 +190,7 @@ namespace thedigitalizationprojectproposal
 
         private void calculateRevenueStreamButton_Click_1(object sender, EventArgs e)
         {
-
-            int occupiedRooms;
-            decimal averageDailyRates;
-            decimal revenueStream;
-            occupiedRooms = int.Parse(occupiedRoomsTotalTextBox.Text);
-            averageDailyRates = decimal.Parse(averageDailyRoomRatesTextBox.Text);
-            revenueStream = (decimal)occupiedRooms * averageDailyRates;
-            outputFormulaLabel2.Text = (revenueStream.ToString("c"));
-
-            //
-            String message;
-            message = "It must be your Revenue depth is useful" + " " + "Thank you for telling us your estimate value";
-            MessageBox.Show(message.ToString());
-
-            //
-            decimal amount = 0;
-            MessageBox.Show(amount.ToString("c"));
-
-            ///
-            //decimal grossIncome = 00;
-            //outputFormulaLabel2.Text = grossIncome.ToString();
-
+          
         }
 
         private void insertOperatingExpenses_Click(object sender, EventArgs e)
@@ -269,6 +248,31 @@ namespace thedigitalizationprojectproposal
         }
 
         private void calculateRevenueStreamButton_Click(object sender, EventArgs e)
+        {
+
+            int occupiedRooms;
+            decimal averageDailyRates;
+            decimal revenueStream;
+            occupiedRooms = int.Parse(occupiedRoomsTotalTextBox.Text);
+            averageDailyRates = decimal.Parse(averageDailyRoomRatesTextBox.Text);
+            revenueStream = (decimal)occupiedRooms * averageDailyRates;
+            outputFormulaLabel2.Text = (revenueStream.ToString("c"));
+
+            //
+            String message;
+            message = "It must be your Revenue depth is useful" + " " + "Thank you for telling us your estimate value";
+            MessageBox.Show(message.ToString());
+
+            //
+            decimal amount = 0;
+            MessageBox.Show(amount.ToString("c"));
+
+            ///
+            //decimal grossIncome = 00;
+            //outputFormulaLabel2.Text = grossIncome.ToString();
+        }
+
+        private void displayOutputRevenue_Click(object sender, EventArgs e)
         {
 
         }
