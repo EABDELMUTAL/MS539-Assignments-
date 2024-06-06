@@ -276,12 +276,12 @@
             // 
             this.outputFormulaLabel3.BackColor = System.Drawing.Color.DarkOrchid;
             this.outputFormulaLabel3.ForeColor = System.Drawing.Color.White;
-            this.outputFormulaLabel3.Location = new System.Drawing.Point(327, 576);
+            this.outputFormulaLabel3.Location = new System.Drawing.Point(365, 576);
             this.outputFormulaLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.outputFormulaLabel3.Name = "outputFormulaLabel3";
-            this.outputFormulaLabel3.Size = new System.Drawing.Size(552, 18);
+            this.outputFormulaLabel3.Size = new System.Drawing.Size(514, 18);
             this.outputFormulaLabel3.TabIndex = 62;
-            this.outputFormulaLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.outputFormulaLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // outputHotelOrLodgingLabel
             // 
@@ -300,10 +300,10 @@
             this.tourismLabel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tourismLabel11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tourismLabel11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.tourismLabel11.Location = new System.Drawing.Point(39, 575);
+            this.tourismLabel11.Location = new System.Drawing.Point(40, 575);
             this.tourismLabel11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tourismLabel11.Name = "tourismLabel11";
-            this.tourismLabel11.Size = new System.Drawing.Size(286, 19);
+            this.tourismLabel11.Size = new System.Drawing.Size(322, 19);
             this.tourismLabel11.TabIndex = 60;
             this.tourismLabel11.Text = "Hotel or Lodging Net Income calculated:";
             this.tourismLabel11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -822,7 +822,7 @@
             this.tourismLabel19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.tourismLabel19.Location = new System.Drawing.Point(41, 447);
             this.tourismLabel19.Name = "tourismLabel19";
-            this.tourismLabel19.Size = new System.Drawing.Size(320, 19);
+            this.tourismLabel19.Size = new System.Drawing.Size(321, 19);
             this.tourismLabel19.TabIndex = 113;
             this.tourismLabel19.Text = "Annual Sales Revenue Earned Hotel Total:";
             this.tourismLabel19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -833,7 +833,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.label1.Location = new System.Drawing.Point(41, 426);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(320, 19);
+            this.label1.Size = new System.Drawing.Size(321, 19);
             this.label1.TabIndex = 115;
             this.label1.Text = "Average Sales Revenue";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -857,10 +857,10 @@
             this.tourismLabel20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tourismLabel20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tourismLabel20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.tourismLabel20.Location = new System.Drawing.Point(39, 554);
+            this.tourismLabel20.Location = new System.Drawing.Point(40, 554);
             this.tourismLabel20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tourismLabel20.Name = "tourismLabel20";
-            this.tourismLabel20.Size = new System.Drawing.Size(323, 19);
+            this.tourismLabel20.Size = new System.Drawing.Size(322, 19);
             this.tourismLabel20.TabIndex = 117;
             this.tourismLabel20.Text = "Hotel or Lodging Operating Expenses:";
             this.tourismLabel20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1099,16 +1099,16 @@
             // 
             this.grossIncomeLabel.BackColor = System.Drawing.Color.DarkOrchid;
             this.grossIncomeLabel.ForeColor = System.Drawing.Color.White;
-            this.grossIncomeLabel.Location = new System.Drawing.Point(364, 532);
+            this.grossIncomeLabel.Location = new System.Drawing.Point(365, 532);
             this.grossIncomeLabel.Name = "grossIncomeLabel";
-            this.grossIncomeLabel.Size = new System.Drawing.Size(514, 19);
+            this.grossIncomeLabel.Size = new System.Drawing.Size(513, 19);
             this.grossIncomeLabel.TabIndex = 128;
             // 
             // label3
             // 
             this.label3.BackColor = System.Drawing.Color.White;
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label3.Location = new System.Drawing.Point(40, 532);
+            this.label3.Location = new System.Drawing.Point(41, 532);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(321, 19);
             this.label3.TabIndex = 127;

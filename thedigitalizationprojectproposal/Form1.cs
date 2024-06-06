@@ -165,7 +165,7 @@ namespace thedigitalizationprojectproposal
             costRoomsSalesTotal = decimal.Parse(costRoomsSalesTotalTextBox.Text);
             costRoomsGoodsSoldTotal = decimal.Parse(costRoomsGoodsSoldTotalTextBox.Text);
             costRoomsSoldTotal = costRoomsSalesTotal + costRoomsGoodsSoldTotal;
-            outputCostRoomsSoldTotalLabel.Text = (costRoomsSoldTotal.ToString("c"));
+            outputCostRoomsSoldTotalLabel.Text = (costRoomsSoldTotal.ToString());
         }
 
         private void calculateCostOfRoomsSoldTotal1_Click(object sender, EventArgs e)
@@ -176,7 +176,7 @@ namespace thedigitalizationprojectproposal
             costRoomsSalesTotal = decimal.Parse(costRoomsSalesTotalTextBox.Text);
             costRoomsGoodsSoldTotal = decimal.Parse(costRoomsGoodsSoldTotalTextBox.Text);
             costRoomsSoldTotal = costRoomsSalesTotal + costRoomsGoodsSoldTotal;
-            outputCostRoomsSoldTotalLabel.Text = (costRoomsSoldTotal.ToString("c"));
+            outputCostRoomsSoldTotalLabel.Text = (costRoomsSoldTotal.ToString());
         }
 
         private void calculateCostOfRoomsSoldTotal2_Click(object sender, EventArgs e)
@@ -187,7 +187,7 @@ namespace thedigitalizationprojectproposal
             costRoomsSalesTotal = decimal.Parse(costRoomsSalesTotalTextBox.Text);
             costRoomsGoodsSoldTotal = decimal.Parse(costRoomsGoodsSoldTotalTextBox.Text);
             costRoomsSoldTotal = costRoomsSalesTotal + costRoomsGoodsSoldTotal;
-            outputCostRoomsSoldTotalLabel.Text = (costRoomsSoldTotal.ToString("c"));
+            outputCostRoomsSoldTotalLabel.Text = (costRoomsSoldTotal.ToString());
         }
 
         private void calculateRevenueStreamButton_Click_1(object sender, EventArgs e)
@@ -199,7 +199,7 @@ namespace thedigitalizationprojectproposal
         {
             decimal operatingExpenses;
             operatingExpenses = decimal.Parse(insertExcessExpensesTextBox.Text);
-            insertExcessExpensesTextBox.Text = (operatingExpenses.ToString("c"));
+            insertExcessExpensesTextBox.Text = (operatingExpenses.ToString());
 
         }
 
@@ -258,7 +258,7 @@ namespace thedigitalizationprojectproposal
             occupiedRooms = int.Parse(occupiedRoomsTotalTextBox.Text);
             averageDailyRates = decimal.Parse(averageDailyRoomRatesTextBox.Text);
             revenueStream = (decimal)occupiedRooms * averageDailyRates;
-            outputFormulaLabel2.Text = (revenueStream.ToString("c"));
+            outputFormulaLabel2.Text = (revenueStream.ToString());
 
             //
             String message;
@@ -273,31 +273,32 @@ namespace thedigitalizationprojectproposal
             //decimal grossIncome = 00;
             //outputFormulaLabel2.Text = grossIncome.ToString();
         }
-
+        
         private void displayOutputRevenue_Click(object sender, EventArgs e)
         {
-         
+            
           int occupiedRooms;
           decimal averageDailyRates;
           decimal revenueStream;
           occupiedRooms = int.Parse(occupiedRoomsTotalTextBox.Text);
           averageDailyRates = decimal.Parse(averageDailyRoomRatesTextBox.Text);
           revenueStream = (decimal)occupiedRooms * averageDailyRates;
-          outputAnnualRevenueEarnedHotelTotalLabel1.Text = (revenueStream.ToString("c"));
+          outputAnnualRevenueEarnedHotelTotalLabel1.Text = (revenueStream.ToString());
         
         }
 
         private void grossIncomeButton_Click(object sender, EventArgs e)
         {
-
+           
             decimal revenueStream;
             decimal costOfRoomsSold;
             decimal grossIncome;
-            revenueStream = decimal.Parse(outputsalesRevenueTextBox.Text);
+            //decimal.TryParse(outputsalesRevenueTextBox.Text, out grossIncome);
             costOfRoomsSold = decimal.Parse(outputCostRoomsSoldTotalLabel.Text);
-            grossIncome = decimal.Parse(grossIncomeLabel.Text);
-            grossIncome = (revenueStream - costOfRoomsSold);
-            grossIncomeLabel.Text = (grossIncome.ToString("c"));
+            revenueStream = decimal.Parse(outputAnnualRevenueEarnedHotelTotalLabel1.Text);
+            //grossIncome = decimal.Parse(grossIncomeLabel.Text);
+            grossIncome = revenueStream - costOfRoomsSold;
+            grossIncomeLabel.Text = (grossIncome.ToString("n"));
 
         }
 
@@ -309,9 +310,9 @@ namespace thedigitalizationprojectproposal
             decimal netIncome;
             grossIncome = decimal.Parse(grossIncomeLabel.Text);
             operatingExpenses = decimal.Parse(insertExcessExpensesTextBox.Text);
-            netIncome = decimal.Parse(outputFormulaLabel3.Text);
+            //netIncome = decimal.Parse(outputFormulaLabel3.Text);
             netIncome = (grossIncome - operatingExpenses);
-            outputFormulaLabel3.Text = netIncome.ToString("c");
+            outputFormulaLabel3.Text = (netIncome.ToString("n"));
 
         }
     }
