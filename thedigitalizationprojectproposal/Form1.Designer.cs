@@ -1125,7 +1125,7 @@
             this.calculateSalesRevenueButton.TabIndex = 112;
             this.calculateSalesRevenueButton.Text = "Dead Revenue";
             this.calculateSalesRevenueButton.UseVisualStyleBackColor = true;
-            this.calculateSalesRevenueButton.Click += new System.EventHandler(this.calculateSalesRevenueButton_Click);
+            //this.calculateSalesRevenueButton.Click += new System.EventHandler(this.calculateSalesRevenueButton_Click);
             // 
             // Form1
             // 

@@ -125,7 +125,7 @@ namespace thedigitalizationprojectproposal
             doubleRooms = int.Parse(doubleRoomsOccupiedTextBox.Text);
             singleRooms = int.Parse(singleRoomsOccupiedTextBox.Text);                                                                                                                                                                                                               totalRooms = double.Parse(doubleRoomsOccupiedTextBox.Text + singleRoomsOccupiedTextBox.Text);
             totalRooms = (double)doubleRooms + singleRooms;
-            outputFormulaLabel4.Text = totalRooms.ToString();
+            outputFormulaLabel4.Text = totalRooms.ToString("n");
 
             outputFormulaLabel4.BackColor = Color.White;
             outputFormulaLabel4.ForeColor = Color.Purple;
@@ -142,7 +142,7 @@ namespace thedigitalizationprojectproposal
             //outputFormulaLabel5.Text = totalRoomsRemainder.ToString();
 
             int modResult = 1500 % 300;
-            outputFormulaLabel5.Text = modResult.ToString();
+            outputFormulaLabel5.Text = modResult.ToString("n");
 
             outputFormulaLabel5.BackColor = Color.White;
             outputFormulaLabel5.ForeColor = Color.Purple;
@@ -191,7 +191,7 @@ namespace thedigitalizationprojectproposal
             costRoomsSalesTotal = decimal.Parse(costRoomsSalesTotalTextBox.Text);
             costRoomsGoodsSoldTotal = decimal.Parse(costRoomsGoodsSoldTotalTextBox.Text);
             costRoomsSoldTotal = costRoomsSalesTotal + costRoomsGoodsSoldTotal;
-            outputCostRoomsSoldTotalLabel.Text = (costRoomsSoldTotal.ToString());
+            outputCostRoomsSoldTotalLabel.Text = (costRoomsSoldTotal.ToString("n"));
 
             outputCostRoomsSoldTotalLabel.BackColor = Color.White;
             outputCostRoomsSoldTotalLabel.ForeColor = Color.Purple;
@@ -205,7 +205,7 @@ namespace thedigitalizationprojectproposal
             costRoomsSalesTotal = decimal.Parse(costRoomsSalesTotalTextBox.Text);
             costRoomsGoodsSoldTotal = decimal.Parse(costRoomsGoodsSoldTotalTextBox.Text);
             costRoomsSoldTotal = costRoomsSalesTotal + costRoomsGoodsSoldTotal;
-            outputCostRoomsSoldTotalLabel.Text = (costRoomsSoldTotal.ToString());
+            outputCostRoomsSoldTotalLabel.Text = (costRoomsSoldTotal.ToString("n"));
         }
 
         private void calculateCostOfRoomsSoldTotal2_Click(object sender, EventArgs e)
@@ -216,7 +216,7 @@ namespace thedigitalizationprojectproposal
             costRoomsSalesTotal = decimal.Parse(costRoomsSalesTotalTextBox.Text);
             costRoomsGoodsSoldTotal = decimal.Parse(costRoomsGoodsSoldTotalTextBox.Text);
             costRoomsSoldTotal = costRoomsSalesTotal + costRoomsGoodsSoldTotal;
-            outputCostRoomsSoldTotalLabel.Text = (costRoomsSoldTotal.ToString());
+            outputCostRoomsSoldTotalLabel.Text = (costRoomsSoldTotal.ToString("n"));
         }
 
         private void calculateRevenueStreamButton_Click_1(object sender, EventArgs e)
@@ -228,7 +228,7 @@ namespace thedigitalizationprojectproposal
         {
             decimal operatingExpenses;
             operatingExpenses = decimal.Parse(insertExcessExpensesTextBox.Text);
-            insertExcessExpensesTextBox.Text = (operatingExpenses.ToString());
+            insertExcessExpensesTextBox.Text = (operatingExpenses.ToString("n"));
 
         }
 
@@ -287,7 +287,7 @@ namespace thedigitalizationprojectproposal
             occupiedRooms = int.Parse(occupiedRoomsTotalTextBox.Text);
             averageDailyRates = decimal.Parse(averageDailyRoomRatesTextBox.Text);
             revenueStream = (decimal)occupiedRooms * averageDailyRates;
-            outputFormulaLabel2.Text = (revenueStream.ToString());
+            outputFormulaLabel2.Text = (revenueStream.ToString("n"));
 
             //
             String message;
@@ -315,7 +315,7 @@ namespace thedigitalizationprojectproposal
           occupiedRooms = int.Parse(occupiedRoomsTotalTextBox.Text);
           averageDailyRates = decimal.Parse(averageDailyRoomRatesTextBox.Text);
           revenueStream = (decimal)occupiedRooms * averageDailyRates;
-          outputAnnualRevenueEarnedHotelTotalLabel1.Text = (revenueStream.ToString());
+          outputAnnualRevenueEarnedHotelTotalLabel1.Text = (revenueStream.ToString("n"));
 
           outputAnnualRevenueEarnedHotelTotalLabel1.BackColor = Color.White;
           outputAnnualRevenueEarnedHotelTotalLabel1.ForeColor = Color.Purple;
@@ -359,9 +359,5 @@ namespace thedigitalizationprojectproposal
 
         }
 
-        private void calculateSalesRevenueButton_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
