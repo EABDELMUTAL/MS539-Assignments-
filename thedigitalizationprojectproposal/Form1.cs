@@ -87,6 +87,7 @@ namespace thedigitalizationprojectproposal
             outputsalesRevenueTextBox.Text = "";
             costRoomsSalesTotalTextBox.Text = "";
             outputFormulaLabel3.Text = "";
+            averageRevenueTextBox.Text = "";
 
             insertExcessExpensesTextBox.Text = "";
 
@@ -98,6 +99,8 @@ namespace thedigitalizationprojectproposal
 
 
             // Set the focus to nameTextBox.
+            //Programmmers control the focus by the following syntax general method
+            //ControlName.Focus();
             hotelOrLodgingTextBox.Focus(); 
         }
 
@@ -158,32 +161,67 @@ namespace thedigitalizationprojectproposal
 
         private void calculateRoomRate_Click(object sender, EventArgs e)
         {
-            decimal roomAverageRate;      // The Room’s Average Rate
-            decimal discountPercentage;   // The discount percentage
-            decimal discountAmount;       // The amount of discount
-            decimal roomSalesRate;        // The Room’s Sales price
+            {
+                try
+                {
+                    decimal roomAverageRate;      // The Room’s Average Rate
+                    decimal discountPercentage;   // The discount percentage
+                    decimal discountAmount;       // The amount of discount
+                    decimal roomSalesRate;        // The Room’s Sales price
 
-            // Get the room’s average price.
-            roomAverageRate = decimal.Parse(roomAverageRateTextBox.Text);
+                    // Get the room’s average price.
+                    roomAverageRate = decimal.Parse(roomAverageRateTextBox.Text);
 
-            // Get the discount percentage.
-            discountPercentage = decimal.Parse(discountPercentageTextBox.Text);
+                    // Get the discount percentage.
+                    discountPercentage = decimal.Parse(discountPercentageTextBox.Text);
 
-            // Move the percentage's decimal point left two spaces.
-            discountPercentage = discountPercentage / 100;
+                    // Move the percentage's decimal point left two spaces.
+                    discountPercentage = discountPercentage / 100;
 
-            // Calculate the amount of the discount.
-            discountAmount = roomAverageRate * discountPercentage;
+                    // Calculate the amount of the discount.
+                    discountAmount = roomAverageRate * discountPercentage;
 
-            // Calculate the sale price.
-            roomSalesRate = roomAverageRate - discountAmount;
+                    // Calculate the sale price.
+                    roomSalesRate = roomAverageRate - discountAmount;
 
-            // Display the sale price.
-            outputRoomSalesRateLabel.Text = roomSalesRate.ToString("c");
+                    // Display the sale price.
+                    outputRoomSalesRateLabel.Text = roomSalesRate.ToString("c");
 
-        }
 
-        private void calculateCostofRoomsSoldTotal_Click(object sender, EventArgs e)
+
+
+
+                    double revenue1;    // To hold revenue year #1
+                    double revenue2;    // To hold revenue year #2
+                    double revenue3;    // To hold revenue year #3
+                    double averageRevenuesGathered; // To hold the average revenue for market research, competition, standards and best price practice  
+
+                    // Get the three revenues.
+                    revenue3 = double.Parse(outputFormulaLabel2.Text);
+                    revenue2 = double.Parse(outputAnnualRevenueEarnedHotelTotalLabel1.Text);
+                    revenue1 = double.Parse(outputsalesRevenueTextBox.Text);
+
+                    // Calculate the average revenue streams on site.
+                    averageRevenuesGathered = (revenue3 + revenue2 + revenue1) / 3.0;
+
+                    // Display the average test score, with
+                    //The program instruction has rounded the                  
+                    //output to 1 decimal point
+                    averageRevenueTextBox.Text = averageRevenuesGathered.ToString("n1");
+
+                }
+                catch (Exception ex)
+                {
+                    // Display the default error message.
+                    MessageBox.Show(ex.Message);
+                }
+            }
+
+
+
+            }
+
+            private void calculateCostofRoomsSoldTotal_Click(object sender, EventArgs e)
         {
             decimal costRoomsSalesTotal;
             decimal costRoomsGoodsSoldTotal;
@@ -359,5 +397,42 @@ namespace thedigitalizationprojectproposal
 
         }
 
+        private void priceAverageOutputLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void calculateSalesRevenueButton_Click(object sender, EventArgs e)
+        {
+
+            {
+                try
+                {
+                    double revenue1;    // To hold revenue year #1
+                    double revenue2;    // To hold revenue year #2
+                    double revenue3;    // To hold revenue year #3
+                    double averageRevenuesGathered; // To hold the average revenue for market research, competition, standards and best price practice  
+
+                    // Get the three revenues.
+                    revenue3 = double.Parse(outputFormulaLabel2.Text);
+                    revenue2 = double.Parse(outputAnnualRevenueEarnedHotelTotalLabel1.Text);
+                    revenue1 = double.Parse(outputsalesRevenueTextBox.Text);
+
+                    // Calculate the average revenue streams on site.
+                    averageRevenuesGathered = (revenue3 + revenue2 + revenue1) / 3.0;
+
+                    // Display the average test score, with
+                    //The program instruction has rounded the                  
+                    //output to 1 decimal point
+                    averageRevenueTextBox.Text = averageRevenuesGathered.ToString("n1");
+
+                }
+                catch (Exception ex)
+                {
+                    // Display the default error message.
+                    MessageBox.Show(ex.Message);
+                }
+            }
+       }
     }
 }
