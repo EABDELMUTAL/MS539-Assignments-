@@ -53,6 +53,10 @@ namespace thedigitalizationprojectproposal
 
             MessageBox.Show(hotelOrLodgingArticleDescription);
 
+            outputHotelOrLodgingLabel.BackColor = Color.White;
+            outputHotelOrLodgingLabel.ForeColor = Color.Purple;
+
+
         }
 
         private void outputLogoLabel_Click(object sender, EventArgs e)
@@ -79,6 +83,22 @@ namespace thedigitalizationprojectproposal
             outputHotelOrLodgingLabel.Text = "";
             outputFormulaLabel2.Text = "";
             outputFormulaLabel3.Text = "";
+            outputAnnualRevenueEarnedHotelTotalLabel1.Text = "";
+            outputsalesRevenueTextBox.Text = "";
+            costRoomsSalesTotalTextBox.Text = "";
+            outputFormulaLabel3.Text = "";
+
+            insertExcessExpensesTextBox.Text = "";
+
+            grossIncomeLabel.Text = "";
+            outputCostRoomsSoldTotalLabel.Text = "";
+
+            costRoomsGoodsSoldTotalTextBox.Text = "";
+
+
+
+            // Set the focus to nameTextBox.
+            hotelOrLodgingTextBox.Focus(); 
         }
 
         private void showBackButton_Click(object sender, EventArgs e)
@@ -107,6 +127,9 @@ namespace thedigitalizationprojectproposal
             totalRooms = (double)doubleRooms + singleRooms;
             outputFormulaLabel4.Text = totalRooms.ToString();
 
+            outputFormulaLabel4.BackColor = Color.White;
+            outputFormulaLabel4.ForeColor = Color.Purple;
+
         }
 
         private void calculateLeftoverRooms_Click(object sender, EventArgs e)
@@ -120,6 +143,9 @@ namespace thedigitalizationprojectproposal
 
             int modResult = 1500 % 300;
             outputFormulaLabel5.Text = modResult.ToString();
+
+            outputFormulaLabel5.BackColor = Color.White;
+            outputFormulaLabel5.ForeColor = Color.Purple;
 
         }
 
@@ -166,6 +192,9 @@ namespace thedigitalizationprojectproposal
             costRoomsGoodsSoldTotal = decimal.Parse(costRoomsGoodsSoldTotalTextBox.Text);
             costRoomsSoldTotal = costRoomsSalesTotal + costRoomsGoodsSoldTotal;
             outputCostRoomsSoldTotalLabel.Text = (costRoomsSoldTotal.ToString());
+
+            outputCostRoomsSoldTotalLabel.BackColor = Color.White;
+            outputCostRoomsSoldTotalLabel.ForeColor = Color.Purple;
         }
 
         private void calculateCostOfRoomsSoldTotal1_Click(object sender, EventArgs e)
@@ -272,6 +301,9 @@ namespace thedigitalizationprojectproposal
             ///
             //decimal grossIncome = 00;
             //outputFormulaLabel2.Text = grossIncome.ToString();
+
+            outputFormulaLabel2.BackColor = Color.White;
+            outputFormulaLabel2.ForeColor = Color.Purple;
         }
         
         private void displayOutputRevenue_Click(object sender, EventArgs e)
@@ -284,7 +316,12 @@ namespace thedigitalizationprojectproposal
           averageDailyRates = decimal.Parse(averageDailyRoomRatesTextBox.Text);
           revenueStream = (decimal)occupiedRooms * averageDailyRates;
           outputAnnualRevenueEarnedHotelTotalLabel1.Text = (revenueStream.ToString());
-        
+
+          outputAnnualRevenueEarnedHotelTotalLabel1.BackColor = Color.White;
+          outputAnnualRevenueEarnedHotelTotalLabel1.ForeColor = Color.Purple;
+
+
+
         }
 
         private void grossIncomeButton_Click(object sender, EventArgs e)
@@ -300,6 +337,9 @@ namespace thedigitalizationprojectproposal
             grossIncome = revenueStream - costOfRoomsSold;
             grossIncomeLabel.Text = (grossIncome.ToString("n"));
 
+            grossIncomeLabel.BackColor = Color.White;
+            grossIncomeLabel.ForeColor = Color.Purple;
+
         }
 
         private void calculateNetIncomeButton_Click(object sender, EventArgs e)
@@ -313,6 +353,14 @@ namespace thedigitalizationprojectproposal
             //netIncome = decimal.Parse(outputFormulaLabel3.Text);
             netIncome = (grossIncome - operatingExpenses);
             outputFormulaLabel3.Text = (netIncome.ToString("n"));
+
+            outputFormulaLabel3.BackColor = Color.White;
+            outputFormulaLabel3.ForeColor = Color.Purple;
+
+        }
+
+        private void calculateSalesRevenueButton_Click(object sender, EventArgs e)
+        {
 
         }
     }

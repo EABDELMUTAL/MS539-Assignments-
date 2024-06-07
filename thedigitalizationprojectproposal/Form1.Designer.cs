@@ -269,7 +269,7 @@
             this.outputFormulaLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.outputFormulaLabel2.Name = "outputFormulaLabel2";
             this.outputFormulaLabel2.Size = new System.Drawing.Size(610, 20);
-            this.outputFormulaLabel2.TabIndex = 63;
+            this.outputFormulaLabel2.TabIndex = 10;
             this.outputFormulaLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // outputFormulaLabel3
@@ -280,7 +280,7 @@
             this.outputFormulaLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.outputFormulaLabel3.Name = "outputFormulaLabel3";
             this.outputFormulaLabel3.Size = new System.Drawing.Size(514, 18);
-            this.outputFormulaLabel3.TabIndex = 62;
+            this.outputFormulaLabel3.TabIndex = 17;
             this.outputFormulaLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // outputHotelOrLodgingLabel
@@ -291,8 +291,8 @@
             this.outputHotelOrLodgingLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.outputHotelOrLodgingLabel.Name = "outputHotelOrLodgingLabel";
             this.outputHotelOrLodgingLabel.Size = new System.Drawing.Size(611, 20);
-            this.outputHotelOrLodgingLabel.TabIndex = 61;
-            this.outputHotelOrLodgingLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.outputHotelOrLodgingLabel.TabIndex = 9;
+            this.outputHotelOrLodgingLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // tourismLabel11
             // 
@@ -317,7 +317,7 @@
             this.averageDailyRoomRatesTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.averageDailyRoomRatesTextBox.Name = "averageDailyRoomRatesTextBox";
             this.averageDailyRoomRatesTextBox.Size = new System.Drawing.Size(673, 21);
-            this.averageDailyRoomRatesTextBox.TabIndex = 59;
+            this.averageDailyRoomRatesTextBox.TabIndex = 8;
             // 
             // tourismLabel8
             // 
@@ -370,7 +370,7 @@
             this.occupiedRoomsTotalTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.occupiedRoomsTotalTextBox.Name = "occupiedRoomsTotalTextBox";
             this.occupiedRoomsTotalTextBox.Size = new System.Drawing.Size(500, 21);
-            this.occupiedRoomsTotalTextBox.TabIndex = 55;
+            this.occupiedRoomsTotalTextBox.TabIndex = 7;
             // 
             // tourismLabel7
             // 
@@ -394,7 +394,7 @@
             this.hotelStandardRatesTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.hotelStandardRatesTextBox.Name = "hotelStandardRatesTextBox";
             this.hotelStandardRatesTextBox.Size = new System.Drawing.Size(640, 23);
-            this.hotelStandardRatesTextBox.TabIndex = 53;
+            this.hotelStandardRatesTextBox.TabIndex = 6;
             // 
             // tourismLabel6
             // 
@@ -418,7 +418,7 @@
             this.classificationStandardsTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.classificationStandardsTextBox.Name = "classificationStandardsTextBox";
             this.classificationStandardsTextBox.Size = new System.Drawing.Size(677, 23);
-            this.classificationStandardsTextBox.TabIndex = 51;
+            this.classificationStandardsTextBox.TabIndex = 5;
             // 
             // tourismLabel5
             // 
@@ -442,7 +442,7 @@
             this.singleRoomsOccupiedTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.singleRoomsOccupiedTextBox.Name = "singleRoomsOccupiedTextBox";
             this.singleRoomsOccupiedTextBox.Size = new System.Drawing.Size(713, 23);
-            this.singleRoomsOccupiedTextBox.TabIndex = 49;
+            this.singleRoomsOccupiedTextBox.TabIndex = 4;
             // 
             // tourismLabel4
             // 
@@ -466,7 +466,7 @@
             this.doubleRoomsOccupiedTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.doubleRoomsOccupiedTextBox.Name = "doubleRoomsOccupiedTextBox";
             this.doubleRoomsOccupiedTextBox.Size = new System.Drawing.Size(707, 23);
-            this.doubleRoomsOccupiedTextBox.TabIndex = 47;
+            this.doubleRoomsOccupiedTextBox.TabIndex = 3;
             // 
             // tourismLabel3
             // 
@@ -490,7 +490,7 @@
             this.locationAddressTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.locationAddressTextBox.Name = "locationAddressTextBox";
             this.locationAddressTextBox.Size = new System.Drawing.Size(725, 23);
-            this.locationAddressTextBox.TabIndex = 45;
+            this.locationAddressTextBox.TabIndex = 1;
             // 
             // tourismLabel2
             // 
@@ -514,7 +514,7 @@
             this.hotelOrLodgingTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.hotelOrLodgingTextBox.Name = "hotelOrLodgingTextBox";
             this.hotelOrLodgingTextBox.Size = new System.Drawing.Size(802, 23);
-            this.hotelOrLodgingTextBox.TabIndex = 43;
+            this.hotelOrLodgingTextBox.TabIndex = 0;
             // 
             // tourismLabel1
             // 
@@ -762,7 +762,7 @@
             this.outputCostRoomsSoldTotalLabel.Location = new System.Drawing.Point(365, 510);
             this.outputCostRoomsSoldTotalLabel.Name = "outputCostRoomsSoldTotalLabel";
             this.outputCostRoomsSoldTotalLabel.Size = new System.Drawing.Size(513, 19);
-            this.outputCostRoomsSoldTotalLabel.TabIndex = 104;
+            this.outputCostRoomsSoldTotalLabel.TabIndex = 14;
             // 
             // costRoomsSalesTotalTextBox
             // 
@@ -771,7 +771,7 @@
             this.costRoomsSalesTotalTextBox.Multiline = true;
             this.costRoomsSalesTotalTextBox.Name = "costRoomsSalesTotalTextBox";
             this.costRoomsSalesTotalTextBox.Size = new System.Drawing.Size(512, 19);
-            this.costRoomsSalesTotalTextBox.TabIndex = 105;
+            this.costRoomsSalesTotalTextBox.TabIndex = 12;
             // 
             // costRoomsGoodsSoldTotalTextBox
             // 
@@ -780,7 +780,7 @@
             this.costRoomsGoodsSoldTotalTextBox.Multiline = true;
             this.costRoomsGoodsSoldTotalTextBox.Name = "costRoomsGoodsSoldTotalTextBox";
             this.costRoomsGoodsSoldTotalTextBox.Size = new System.Drawing.Size(512, 19);
-            this.costRoomsGoodsSoldTotalTextBox.TabIndex = 106;
+            this.costRoomsGoodsSoldTotalTextBox.TabIndex = 13;
             // 
             // tourismLabel17
             // 
@@ -906,7 +906,7 @@
             this.outputAnnualRevenueEarnedHotelTotalLabel1.Location = new System.Drawing.Point(365, 425);
             this.outputAnnualRevenueEarnedHotelTotalLabel1.Name = "outputAnnualRevenueEarnedHotelTotalLabel1";
             this.outputAnnualRevenueEarnedHotelTotalLabel1.Size = new System.Drawing.Size(512, 19);
-            this.outputAnnualRevenueEarnedHotelTotalLabel1.TabIndex = 123;
+            this.outputAnnualRevenueEarnedHotelTotalLabel1.TabIndex = 11;
             // 
             // outputsalesRevenueTextBox
             // 
@@ -915,7 +915,7 @@
             this.outputsalesRevenueTextBox.Multiline = true;
             this.outputsalesRevenueTextBox.Name = "outputsalesRevenueTextBox";
             this.outputsalesRevenueTextBox.Size = new System.Drawing.Size(512, 19);
-            this.outputsalesRevenueTextBox.TabIndex = 124;
+            this.outputsalesRevenueTextBox.TabIndex = 18;
             this.outputsalesRevenueTextBox.Text = "Key in the income statement revenue stream again if needed";
             // 
             // insertExcessExpensesTextBox
@@ -926,7 +926,7 @@
             this.insertExcessExpensesTextBox.Multiline = true;
             this.insertExcessExpensesTextBox.Name = "insertExcessExpensesTextBox";
             this.insertExcessExpensesTextBox.Size = new System.Drawing.Size(514, 18);
-            this.insertExcessExpensesTextBox.TabIndex = 125;
+            this.insertExcessExpensesTextBox.TabIndex = 16;
             // 
             // averageRoomRateCalculator
             // 
@@ -1102,7 +1102,7 @@
             this.grossIncomeLabel.Location = new System.Drawing.Point(365, 532);
             this.grossIncomeLabel.Name = "grossIncomeLabel";
             this.grossIncomeLabel.Size = new System.Drawing.Size(513, 19);
-            this.grossIncomeLabel.TabIndex = 128;
+            this.grossIncomeLabel.TabIndex = 15;
             // 
             // label3
             // 
@@ -1125,6 +1125,7 @@
             this.calculateSalesRevenueButton.TabIndex = 112;
             this.calculateSalesRevenueButton.Text = "Dead Revenue";
             this.calculateSalesRevenueButton.UseVisualStyleBackColor = true;
+            this.calculateSalesRevenueButton.Click += new System.EventHandler(this.calculateSalesRevenueButton_Click);
             // 
             // Form1
             // 
