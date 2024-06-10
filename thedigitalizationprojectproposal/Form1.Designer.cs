@@ -150,7 +150,7 @@
             // 
             this.communicateArticleDescriptionButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.communicateArticleDescriptionButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.communicateArticleDescriptionButton.Location = new System.Drawing.Point(1035, 310);
+            this.communicateArticleDescriptionButton.Location = new System.Drawing.Point(1035, 273);
             this.communicateArticleDescriptionButton.Margin = new System.Windows.Forms.Padding(4);
             this.communicateArticleDescriptionButton.Name = "communicateArticleDescriptionButton";
             this.communicateArticleDescriptionButton.Size = new System.Drawing.Size(134, 20);
@@ -168,7 +168,7 @@
             this.outputLogoLabel.Location = new System.Drawing.Point(1035, 196);
             this.outputLogoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.outputLogoLabel.Name = "outputLogoLabel";
-            this.outputLogoLabel.Size = new System.Drawing.Size(298, 42);
+            this.outputLogoLabel.Size = new System.Drawing.Size(297, 42);
             this.outputLogoLabel.TabIndex = 72;
             this.outputLogoLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.outputLogoLabel.Click += new System.EventHandler(this.outputLogoLabel_Click);
@@ -203,7 +203,7 @@
             // 
             this.calculateRevenueStreamButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.calculateRevenueStreamButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.calculateRevenueStreamButton.Location = new System.Drawing.Point(1036, 332);
+            this.calculateRevenueStreamButton.Location = new System.Drawing.Point(1036, 295);
             this.calculateRevenueStreamButton.Margin = new System.Windows.Forms.Padding(4);
             this.calculateRevenueStreamButton.Name = "calculateRevenueStreamButton";
             this.calculateRevenueStreamButton.Size = new System.Drawing.Size(133, 20);
@@ -565,7 +565,7 @@
             this.logoPictureBox.Location = new System.Drawing.Point(1035, 22);
             this.logoPictureBox.Margin = new System.Windows.Forms.Padding(4);
             this.logoPictureBox.Name = "logoPictureBox";
-            this.logoPictureBox.Size = new System.Drawing.Size(291, 168);
+            this.logoPictureBox.Size = new System.Drawing.Size(297, 168);
             this.logoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.logoPictureBox.TabIndex = 66;
             this.logoPictureBox.TabStop = false;
@@ -621,7 +621,7 @@
             // 
             this.calculateUnOccupiedRooms.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.calculateUnOccupiedRooms.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.calculateUnOccupiedRooms.Location = new System.Drawing.Point(1036, 354);
+            this.calculateUnOccupiedRooms.Location = new System.Drawing.Point(1036, 317);
             this.calculateUnOccupiedRooms.Margin = new System.Windows.Forms.Padding(4);
             this.calculateUnOccupiedRooms.Name = "calculateUnOccupiedRooms";
             this.calculateUnOccupiedRooms.Size = new System.Drawing.Size(133, 20);
@@ -661,7 +661,7 @@
             // 
             this.calculateLeftoverRooms.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.calculateLeftoverRooms.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.calculateLeftoverRooms.Location = new System.Drawing.Point(1036, 376);
+            this.calculateLeftoverRooms.Location = new System.Drawing.Point(1036, 339);
             this.calculateLeftoverRooms.Margin = new System.Windows.Forms.Padding(4);
             this.calculateLeftoverRooms.Name = "calculateLeftoverRooms";
             this.calculateLeftoverRooms.Size = new System.Drawing.Size(133, 20);
@@ -890,6 +890,7 @@
             // priceAverageOutputLabel
             // 
             this.priceAverageOutputLabel.BackColor = System.Drawing.Color.White;
+            this.priceAverageOutputLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.priceAverageOutputLabel.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.priceAverageOutputLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.priceAverageOutputLabel.Location = new System.Drawing.Point(168, 119);
@@ -1063,7 +1064,7 @@
             this.titletextBox1.Name = "titletextBox1";
             this.titletextBox1.Size = new System.Drawing.Size(977, 23);
             this.titletextBox1.TabIndex = 130;
-            this.titletextBox1.Text = "Gross and Net Income Manual Calculator";
+            this.titletextBox1.Text = "Gross and Net Income Calculator";
             this.titletextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // averageRevenueOnSite
@@ -1071,7 +1072,7 @@
             this.averageRevenueOnSite.BackColor = System.Drawing.Color.White;
             this.averageRevenueOnSite.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.averageRevenueOnSite.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.averageRevenueOnSite.Location = new System.Drawing.Point(1216, 314);
+            this.averageRevenueOnSite.Location = new System.Drawing.Point(1214, 297);
             this.averageRevenueOnSite.Name = "averageRevenueOnSite";
             this.averageRevenueOnSite.Size = new System.Drawing.Size(114, 16);
             this.averageRevenueOnSite.TabIndex = 131;
@@ -1082,7 +1083,7 @@
             // 
             this.averageRevenueTextBox.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.averageRevenueTextBox.ForeColor = System.Drawing.Color.Purple;
-            this.averageRevenueTextBox.Location = new System.Drawing.Point(1216, 332);
+            this.averageRevenueTextBox.Location = new System.Drawing.Point(1214, 315);
             this.averageRevenueTextBox.Multiline = true;
             this.averageRevenueTextBox.Name = "averageRevenueTextBox";
             this.averageRevenueTextBox.Size = new System.Drawing.Size(114, 20);
@@ -1114,6 +1115,7 @@
             this.calculateRoomRate.TabIndex = 104;
             this.calculateRoomRate.Text = "Discount on Average";
             this.calculateRoomRate.UseVisualStyleBackColor = true;
+            this.calculateRoomRate.Click += new System.EventHandler(this.calculateRoomRate_Click_1);
             // 
             // outputRoomSalesRateLabel
             // 

@@ -223,39 +223,69 @@ namespace thedigitalizationprojectproposal
 
             private void calculateCostofRoomsSoldTotal_Click(object sender, EventArgs e)
         {
-            decimal costRoomsSalesTotal;
-            decimal costRoomsGoodsSoldTotal;
-            decimal costRoomsSoldTotal;
-            costRoomsSalesTotal = decimal.Parse(costRoomsSalesTotalTextBox.Text);
-            costRoomsGoodsSoldTotal = decimal.Parse(costRoomsGoodsSoldTotalTextBox.Text);
-            costRoomsSoldTotal = costRoomsSalesTotal + costRoomsGoodsSoldTotal;
-            outputCostRoomsSoldTotalLabel.Text = (costRoomsSoldTotal.ToString("n"));
+            {
+                try
+                {
+                    decimal costRoomsSalesTotal;
+                    decimal costRoomsGoodsSoldTotal;
+                    decimal costRoomsSoldTotal;
+                    costRoomsSalesTotal = decimal.Parse(costRoomsSalesTotalTextBox.Text);
+                    costRoomsGoodsSoldTotal = decimal.Parse(costRoomsGoodsSoldTotalTextBox.Text);
+                    costRoomsSoldTotal = costRoomsSalesTotal + costRoomsGoodsSoldTotal;
+                    outputCostRoomsSoldTotalLabel.Text = (costRoomsSoldTotal.ToString("n"));
 
-            outputCostRoomsSoldTotalLabel.BackColor = Color.White;
-            outputCostRoomsSoldTotalLabel.ForeColor = Color.Purple;
-        }
+                    outputCostRoomsSoldTotalLabel.BackColor = Color.White;
+                    outputCostRoomsSoldTotalLabel.ForeColor = Color.Purple;
+                }
+                catch (Exception ex)
+                {
+                    // Display the default error message.
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            }
 
-        private void calculateCostOfRoomsSoldTotal1_Click(object sender, EventArgs e)
+            private void calculateCostOfRoomsSoldTotal1_Click(object sender, EventArgs e)
         {
-            decimal costRoomsSalesTotal;
-            decimal costRoomsGoodsSoldTotal;
-            decimal costRoomsSoldTotal;
-            costRoomsSalesTotal = decimal.Parse(costRoomsSalesTotalTextBox.Text);
-            costRoomsGoodsSoldTotal = decimal.Parse(costRoomsGoodsSoldTotalTextBox.Text);
-            costRoomsSoldTotal = costRoomsSalesTotal + costRoomsGoodsSoldTotal;
-            outputCostRoomsSoldTotalLabel.Text = (costRoomsSoldTotal.ToString("n"));
-        }
+            {
+                try
+                {
+                    decimal costRoomsSalesTotal;
+                    decimal costRoomsGoodsSoldTotal;
+                    decimal costRoomsSoldTotal;
+                    costRoomsSalesTotal = decimal.Parse(costRoomsSalesTotalTextBox.Text);
+                    costRoomsGoodsSoldTotal = decimal.Parse(costRoomsGoodsSoldTotalTextBox.Text);
+                    costRoomsSoldTotal = costRoomsSalesTotal + costRoomsGoodsSoldTotal;
+                    outputCostRoomsSoldTotalLabel.Text = (costRoomsSoldTotal.ToString("n"));
+                }
+                catch (Exception ex)
+                {
+                    // Display the default error message.
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            }
 
         private void calculateCostOfRoomsSoldTotal2_Click(object sender, EventArgs e)
         {
-            decimal costRoomsSalesTotal;
-            decimal costRoomsGoodsSoldTotal;
-            decimal costRoomsSoldTotal;
-            costRoomsSalesTotal = decimal.Parse(costRoomsSalesTotalTextBox.Text);
-            costRoomsGoodsSoldTotal = decimal.Parse(costRoomsGoodsSoldTotalTextBox.Text);
-            costRoomsSoldTotal = costRoomsSalesTotal + costRoomsGoodsSoldTotal;
-            outputCostRoomsSoldTotalLabel.Text = (costRoomsSoldTotal.ToString("n"));
-        }
+            {
+                try
+                {
+                    decimal costRoomsSalesTotal;
+                    decimal costRoomsGoodsSoldTotal;
+                    decimal costRoomsSoldTotal;
+                    costRoomsSalesTotal = decimal.Parse(costRoomsSalesTotalTextBox.Text);
+                    costRoomsGoodsSoldTotal = decimal.Parse(costRoomsGoodsSoldTotalTextBox.Text);
+                    costRoomsSoldTotal = costRoomsSalesTotal + costRoomsGoodsSoldTotal;
+                    outputCostRoomsSoldTotalLabel.Text = (costRoomsSoldTotal.ToString("n"));
+                }
+                catch (Exception ex)
+                {
+                    // Display the default error message.
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            }
 
         private void calculateRevenueStreamButton_Click_1(object sender, EventArgs e)
         {
@@ -264,10 +294,20 @@ namespace thedigitalizationprojectproposal
 
         private void insertOperatingExpenses_Click(object sender, EventArgs e)
         {
+            { try
+                { 
             decimal operatingExpenses;
-            operatingExpenses = decimal.Parse(insertExcessExpensesTextBox.Text);
-            insertExcessExpensesTextBox.Text = (operatingExpenses.ToString("n"));
+                operatingExpenses = decimal.Parse(insertExcessExpensesTextBox.Text);
+                insertExcessExpensesTextBox.Text = (operatingExpenses.ToString("n"));
 
+            }
+              catch (Exception ex)
+                {
+                // Display the default error message.
+                MessageBox.Show(ex.Message);
+                }
+            }
+        
         }
 
         private void calculateAverageRoomRates_Click(object sender, EventArgs e)
@@ -294,7 +334,7 @@ namespace thedigitalizationprojectproposal
                 priceAverageOutputLabel.Text = averageRoomRates.ToString("n1");
 
                  }
-               catch (Exception ex)
+              catch (Exception ex)
                 {
                 // Display the default error message.
                 MessageBox.Show(ex.Message);
@@ -382,19 +422,27 @@ namespace thedigitalizationprojectproposal
 
         private void calculateNetIncomeButton_Click(object sender, EventArgs e)
         {
+            {
+                try
+                {
+                    decimal grossIncome;
+                    decimal operatingExpenses;
+                    decimal netIncome;
+                    grossIncome = decimal.Parse(grossIncomeLabel.Text);
+                    operatingExpenses = decimal.Parse(insertExcessExpensesTextBox.Text);
+                    //netIncome = decimal.Parse(outputFormulaLabel3.Text);
+                    netIncome = (grossIncome - operatingExpenses);
+                    outputFormulaLabel3.Text = (netIncome.ToString("n"));
 
-            decimal grossIncome;
-            decimal operatingExpenses;
-            decimal netIncome;
-            grossIncome = decimal.Parse(grossIncomeLabel.Text);
-            operatingExpenses = decimal.Parse(insertExcessExpensesTextBox.Text);
-            //netIncome = decimal.Parse(outputFormulaLabel3.Text);
-            netIncome = (grossIncome - operatingExpenses);
-            outputFormulaLabel3.Text = (netIncome.ToString("n"));
-
-            outputFormulaLabel3.BackColor = Color.White;
-            outputFormulaLabel3.ForeColor = Color.Purple;
-
+                    outputFormulaLabel3.BackColor = Color.White;
+                    outputFormulaLabel3.ForeColor = Color.Purple;
+                }
+                catch (Exception ex)
+                {
+                 // Display the default error message.
+                 MessageBox.Show(ex.Message);
+                }
+            }
         }
 
         private void priceAverageOutputLabel_Click(object sender, EventArgs e)
@@ -434,5 +482,45 @@ namespace thedigitalizationprojectproposal
                 }
             }
        }
+
+        private void calculateRoomRate_Click_1(object sender, EventArgs e)
+        {
+
+            {
+                try
+                {
+                    decimal roomAverageRate;      // The Room’s Average Rate
+                    decimal discountPercentage;   // The discount percentage
+                    decimal discountAmount;       // The amount of discount
+                    decimal roomSalesRate;        // The Room’s Sales price
+
+                    // Get the room’s average price.
+                    roomAverageRate = decimal.Parse(roomAverageRateTextBox.Text);
+
+                    // Get the discount percentage.
+                    discountPercentage = decimal.Parse(discountPercentageTextBox.Text);
+
+                    // Move the percentage's decimal point left two spaces.
+                    discountPercentage = discountPercentage / 100;
+
+                    // Calculate the amount of the discount.
+                    discountAmount = roomAverageRate * discountPercentage;
+
+                    // Calculate the sale price.
+                    roomSalesRate = roomAverageRate - discountAmount;
+
+                    // Display the sale price.
+                    outputRoomSalesRateLabel.Text = roomSalesRate.ToString("c");
+
+                }
+                catch (Exception ex)
+                {
+                    // Display the default error message.
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+
     }
 }
+
