@@ -394,7 +394,7 @@
             // hotelStandardRatesTextBox
             // 
             this.hotelStandardRatesTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.hotelStandardRatesTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.hotelStandardRatesTextBox.ForeColor = System.Drawing.Color.Purple;
             this.hotelStandardRatesTextBox.Location = new System.Drawing.Point(377, 208);
             this.hotelStandardRatesTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.hotelStandardRatesTextBox.Name = "hotelStandardRatesTextBox";
@@ -418,7 +418,7 @@
             // classificationStandardsTextBox
             // 
             this.classificationStandardsTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.classificationStandardsTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.classificationStandardsTextBox.ForeColor = System.Drawing.Color.Purple;
             this.classificationStandardsTextBox.Location = new System.Drawing.Point(340, 184);
             this.classificationStandardsTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.classificationStandardsTextBox.Name = "classificationStandardsTextBox";
@@ -514,7 +514,7 @@
             // hotelOrLodgingTextBox
             // 
             this.hotelOrLodgingTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.hotelOrLodgingTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.hotelOrLodgingTextBox.ForeColor = System.Drawing.Color.Purple;
             this.hotelOrLodgingTextBox.Location = new System.Drawing.Point(216, 89);
             this.hotelOrLodgingTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.hotelOrLodgingTextBox.Name = "hotelOrLodgingTextBox";

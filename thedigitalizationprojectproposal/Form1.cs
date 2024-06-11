@@ -61,7 +61,7 @@ namespace thedigitalizationprojectproposal
 
         private void outputLogoLabel_Click(object sender, EventArgs e)
         {
-            outputLogoLabel.Text = "5p-OpEx Group Inc." +" "+ "+1 347 406 2191" + " " + "eleanor@5p-OpExGroup.org";
+            outputLogoLabel.Text = "5p-OpEx Group Inc." + " " + "+1 347 406 2191" + " " + "eleanor@5p-OpExGroup.org";
         }
 
         private void exitButton_Click(object sender, EventArgs e)
@@ -101,7 +101,7 @@ namespace thedigitalizationprojectproposal
             // Set the focus to nameTextBox.
             //Programmmers control the focus by the following syntax general method
             //ControlName.Focus();
-            hotelOrLodgingTextBox.Focus(); 
+            hotelOrLodgingTextBox.Focus();
         }
 
         private void showBackButton_Click(object sender, EventArgs e)
@@ -126,7 +126,7 @@ namespace thedigitalizationprojectproposal
             int singleRooms;
             double totalRooms;
             doubleRooms = int.Parse(doubleRoomsOccupiedTextBox.Text);
-            singleRooms = int.Parse(singleRoomsOccupiedTextBox.Text);                                                                                                                                                                                                               totalRooms = double.Parse(doubleRoomsOccupiedTextBox.Text + singleRoomsOccupiedTextBox.Text);
+            singleRooms = int.Parse(singleRoomsOccupiedTextBox.Text); totalRooms = double.Parse(doubleRoomsOccupiedTextBox.Text + singleRoomsOccupiedTextBox.Text);
             totalRooms = (double)doubleRooms + singleRooms;
             outputFormulaLabel4.Text = totalRooms.ToString("n");
 
@@ -219,9 +219,9 @@ namespace thedigitalizationprojectproposal
 
 
 
-            }
+        }
 
-            private void calculateCostofRoomsSoldTotal_Click(object sender, EventArgs e)
+        private void calculateCostofRoomsSoldTotal_Click(object sender, EventArgs e)
         {
             {
                 try
@@ -243,9 +243,9 @@ namespace thedigitalizationprojectproposal
                     MessageBox.Show(ex.Message);
                 }
             }
-            }
+        }
 
-            private void calculateCostOfRoomsSoldTotal1_Click(object sender, EventArgs e)
+        private void calculateCostOfRoomsSoldTotal1_Click(object sender, EventArgs e)
         {
             {
                 try
@@ -264,7 +264,7 @@ namespace thedigitalizationprojectproposal
                     MessageBox.Show(ex.Message);
                 }
             }
-            }
+        }
 
         private void calculateCostOfRoomsSoldTotal2_Click(object sender, EventArgs e)
         {
@@ -285,59 +285,59 @@ namespace thedigitalizationprojectproposal
                     MessageBox.Show(ex.Message);
                 }
             }
-            }
+        }
 
         private void calculateRevenueStreamButton_Click_1(object sender, EventArgs e)
         {
-          
+
         }
 
         private void insertOperatingExpenses_Click(object sender, EventArgs e)
         {
             { try
-                { 
-            decimal operatingExpenses;
-                operatingExpenses = decimal.Parse(insertExcessExpensesTextBox.Text);
-                insertExcessExpensesTextBox.Text = (operatingExpenses.ToString("n"));
-
-            }
-              catch (Exception ex)
                 {
-                // Display the default error message.
-                MessageBox.Show(ex.Message);
+                    decimal operatingExpenses;
+                    operatingExpenses = decimal.Parse(insertExcessExpensesTextBox.Text);
+                    insertExcessExpensesTextBox.Text = (operatingExpenses.ToString("n"));
+
+                }
+                catch (Exception ex)
+                {
+                    // Display the default error message.
+                    MessageBox.Show(ex.Message);
                 }
             }
-        
+
         }
 
         private void calculateAverageRoomRates_Click(object sender, EventArgs e)
         {
-             {
-             try
             {
-                double roomRateYear1;    // To hold room rates year #1
-                double roomRateYear2;    // To hold room rates year #2
-                double roomRateYear3;    // To hold room rates year #3
-                double averageRoomRates; // To hold the average room rates for market research, competition, standards and best price practice  
-
-                // Get the three test scores.
-                roomRateYear3 = double.Parse(roomRatesTextBoxY4.Text);
-                roomRateYear2 = double.Parse(roomRatesTextBoxY3.Text);
-                roomRateYear1 = double.Parse(roomRatesTextBoxY2.Text);
-
-                // Calculate the average test score.
-                averageRoomRates = (roomRateYear3 + roomRateYear2 + roomRateYear1) / 3.0;
-
-                // Display the average test score, with
-                //The program instruction has rounded the                  
-                //output to 1 decimal point
-                priceAverageOutputLabel.Text = averageRoomRates.ToString("n1");
-
-                 }
-              catch (Exception ex)
+                try
                 {
-                // Display the default error message.
-                MessageBox.Show(ex.Message);
+                    double roomRateYear1;    // To hold room rates year #1
+                    double roomRateYear2;    // To hold room rates year #2
+                    double roomRateYear3;    // To hold room rates year #3
+                    double averageRoomRates; // To hold the average room rates for market research, competition, standards and best price practice  
+
+                    // Get the three test scores.
+                    roomRateYear3 = double.Parse(roomRatesTextBoxY4.Text);
+                    roomRateYear2 = double.Parse(roomRatesTextBoxY3.Text);
+                    roomRateYear1 = double.Parse(roomRatesTextBoxY2.Text);
+
+                    // Calculate the average test score.
+                    averageRoomRates = (roomRateYear3 + roomRateYear2 + roomRateYear1) / 3.0;
+
+                    // Display the average test score, with
+                    //The program instruction has rounded the                  
+                    //output to 1 decimal point
+                    priceAverageOutputLabel.Text = averageRoomRates.ToString("n1");
+
+                }
+                catch (Exception ex)
+                {
+                    // Display the default error message.
+                    MessageBox.Show(ex.Message);
                 }
             }
         }
@@ -352,38 +352,51 @@ namespace thedigitalizationprojectproposal
 
         private void exitButton1_Click(object sender, EventArgs e)
         {
-           //Close the panel form
+            //Close the panel form
             this.Close();
         }
 
         private void calculateRevenueStreamButton_Click(object sender, EventArgs e)
         {
+            {
 
-            int occupiedRooms;
-            decimal averageDailyRates;
-            decimal revenueStream;
-            occupiedRooms = int.Parse(occupiedRoomsTotalTextBox.Text);
-            averageDailyRates = decimal.Parse(averageDailyRoomRatesTextBox.Text);
-            revenueStream = (decimal)occupiedRooms * averageDailyRates;
-            outputFormulaLabel2.Text = (revenueStream.ToString("n"));
+                try
+                {
 
-            //
-            String message;
-            message = "It must be your Revenue depth is useful" + " " + "Thank you for telling us your estimate value";
-            MessageBox.Show(message.ToString());
+                    int occupiedRooms;
+                    decimal averageDailyRates;
+                    decimal revenueStream;
+                    occupiedRooms = int.Parse(occupiedRoomsTotalTextBox.Text);
+                    averageDailyRates = decimal.Parse(averageDailyRoomRatesTextBox.Text);
+                    revenueStream = (decimal)occupiedRooms * averageDailyRates;
+                    outputFormulaLabel2.Text = (revenueStream.ToString("n"));
 
-            //
-            decimal amount = 0;
-            MessageBox.Show(amount.ToString("c"));
+                }
+                catch
+                {
+                  MessageBox.Show("Invalid integer.");
+                }
 
-            ///
-            //decimal grossIncome = 00;
-            //outputFormulaLabel2.Text = grossIncome.ToString();
+                //
+                String message;
+                message = "It must be your Revenue depth is useful" + " " + "Thank you for telling us your estimate value";
+                MessageBox.Show(message.ToString());
 
-            outputFormulaLabel2.BackColor = Color.White;
-            outputFormulaLabel2.ForeColor = Color.Purple;
-        }
-        
+                //
+                decimal amount = 0;
+                MessageBox.Show(amount.ToString("c"));
+
+                ///
+                //decimal grossIncome = 00;
+                //outputFormulaLabel2.Text = grossIncome.ToString();
+
+                outputFormulaLabel2.BackColor = Color.White;
+                outputFormulaLabel2.ForeColor = Color.Purple;
+            }
+    
+}
+
+
         private void displayOutputRevenue_Click(object sender, EventArgs e)
         {
             
