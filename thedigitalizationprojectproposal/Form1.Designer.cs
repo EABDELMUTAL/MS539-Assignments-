@@ -699,6 +699,7 @@
             this.costRoomsSalesTotalTextBox.Name = "costRoomsSalesTotalTextBox";
             this.costRoomsSalesTotalTextBox.Size = new System.Drawing.Size(512, 19);
             this.costRoomsSalesTotalTextBox.TabIndex = 12;
+            this.costRoomsSalesTotalTextBox.TextChanged += new System.EventHandler(this.costRoomsSalesTotalTextBox_TextChanged);
             // 
             // costRoomsGoodsSoldTotalTextBox
             // 
@@ -708,6 +709,7 @@
             this.costRoomsGoodsSoldTotalTextBox.Name = "costRoomsGoodsSoldTotalTextBox";
             this.costRoomsGoodsSoldTotalTextBox.Size = new System.Drawing.Size(512, 19);
             this.costRoomsGoodsSoldTotalTextBox.TabIndex = 13;
+            this.costRoomsGoodsSoldTotalTextBox.TextChanged += new System.EventHandler(this.costRoomsGoodsSoldTotalTextBox_TextChanged);
             // 
             // tourismLabel17
             // 
@@ -898,7 +900,6 @@
             this.priceAverageOutputLabel.Size = new System.Drawing.Size(115, 19);
             this.priceAverageOutputLabel.TabIndex = 12;
             this.priceAverageOutputLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.priceAverageOutputLabel.Click += new System.EventHandler(this.priceAverageOutputLabel_Click);
             // 
             // tourismLabel22
             // 

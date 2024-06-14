@@ -16,7 +16,9 @@ namespace thedigitalizationprojectproposal
 {
     public partial class Form1 : Form
     {
+#pragma warning disable CS0169 // The field 'Form1.grossIncome' is never used
         private object grossIncome;
+#pragma warning restore CS0169 // The field 'Form1.grossIncome' is never used
         private object outputAnnualRevenueEarnedHotelTotalLabel;
 
         public decimal costOfGoodsSold { get; private set; }
@@ -72,6 +74,7 @@ namespace thedigitalizationprojectproposal
 
         private void clearButton_Click(object sender, EventArgs e)
         {
+
             hotelOrLodgingTextBox.Text = "";
             locationAddressTextBox.Text = "";
             doubleRoomsOccupiedTextBox.Text = "";
@@ -102,6 +105,7 @@ namespace thedigitalizationprojectproposal
             //Programmmers control the focus by the following syntax general method
             //ControlName.Focus();
             hotelOrLodgingTextBox.Focus();
+
         }
 
         private void showBackButton_Click(object sender, EventArgs e)
@@ -187,10 +191,6 @@ namespace thedigitalizationprojectproposal
                     // Display the sale price.
                     outputRoomSalesRateLabel.Text = roomSalesRate.ToString("c");
 
-
-
-
-
                     double revenue1;    // To hold revenue year #1
                     double revenue2;    // To hold revenue year #2
                     double revenue3;    // To hold revenue year #3
@@ -217,8 +217,6 @@ namespace thedigitalizationprojectproposal
                 }
             }
 
-
-
         }
 
         private void calculateCostofRoomsSoldTotal_Click(object sender, EventArgs e)
@@ -226,13 +224,13 @@ namespace thedigitalizationprojectproposal
             {
                 try
                 {
-                    decimal costRoomsSalesTotal;
-                    decimal costRoomsGoodsSoldTotal;
-                    decimal costRoomsSoldTotal;
-                    costRoomsSalesTotal = decimal.Parse(costRoomsSalesTotalTextBox.Text);
-                    costRoomsGoodsSoldTotal = decimal.Parse(costRoomsGoodsSoldTotalTextBox.Text);
+                    double costRoomsSalesTotal;
+                    double costRoomsGoodsSoldTotal;
+                    double costRoomsSoldTotal;
+                    costRoomsSalesTotal = double.Parse(costRoomsSalesTotalTextBox.Text);
+                    costRoomsGoodsSoldTotal = double.Parse(costRoomsGoodsSoldTotalTextBox.Text);
                     costRoomsSoldTotal = costRoomsSalesTotal + costRoomsGoodsSoldTotal;
-                    outputCostRoomsSoldTotalLabel.Text = (costRoomsSoldTotal.ToString("n"));
+                    outputCostRoomsSoldTotalLabel.Text = (costRoomsSoldTotal.ToString("n1"));
 
                     outputCostRoomsSoldTotalLabel.BackColor = Color.White;
                     outputCostRoomsSoldTotalLabel.ForeColor = Color.Purple;
@@ -250,13 +248,13 @@ namespace thedigitalizationprojectproposal
             {
                 try
                 {
-                    decimal costRoomsSalesTotal;
-                    decimal costRoomsGoodsSoldTotal;
-                    decimal costRoomsSoldTotal;
-                    costRoomsSalesTotal = decimal.Parse(costRoomsSalesTotalTextBox.Text);
-                    costRoomsGoodsSoldTotal = decimal.Parse(costRoomsGoodsSoldTotalTextBox.Text);
+                    double costRoomsSalesTotal;
+                    double costRoomsGoodsSoldTotal;
+                    double costRoomsSoldTotal;
+                    costRoomsSalesTotal = double.Parse(costRoomsSalesTotalTextBox.Text);
+                    costRoomsGoodsSoldTotal = double.Parse(costRoomsGoodsSoldTotalTextBox.Text);
                     costRoomsSoldTotal = costRoomsSalesTotal + costRoomsGoodsSoldTotal;
-                    outputCostRoomsSoldTotalLabel.Text = (costRoomsSoldTotal.ToString("n"));
+                    outputCostRoomsSoldTotalLabel.Text = (costRoomsSoldTotal.ToString("n1"));
                 }
                 catch (Exception ex)
                 {
@@ -271,13 +269,13 @@ namespace thedigitalizationprojectproposal
             {
                 try
                 {
-                    decimal costRoomsSalesTotal;
-                    decimal costRoomsGoodsSoldTotal;
-                    decimal costRoomsSoldTotal;
-                    costRoomsSalesTotal = decimal.Parse(costRoomsSalesTotalTextBox.Text);
-                    costRoomsGoodsSoldTotal = decimal.Parse(costRoomsGoodsSoldTotalTextBox.Text);
+                    double costRoomsSalesTotal;
+                    double costRoomsGoodsSoldTotal;
+                    double costRoomsSoldTotal;
+                    costRoomsSalesTotal = double.Parse(costRoomsSalesTotalTextBox.Text);
+                    costRoomsGoodsSoldTotal = double.Parse(costRoomsGoodsSoldTotalTextBox.Text);
                     costRoomsSoldTotal = costRoomsSalesTotal + costRoomsGoodsSoldTotal;
-                    outputCostRoomsSoldTotalLabel.Text = (costRoomsSoldTotal.ToString("n"));
+                    outputCostRoomsSoldTotalLabel.Text = costRoomsSoldTotal.ToString("n1");
                 }
                 catch (Exception ex)
                 {
@@ -287,14 +285,10 @@ namespace thedigitalizationprojectproposal
             }
         }
 
-        private void calculateRevenueStreamButton_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void insertOperatingExpenses_Click(object sender, EventArgs e)
         {
-            { try
+            {
+                try
                 {
                     decimal operatingExpenses;
                     operatingExpenses = decimal.Parse(insertExcessExpensesTextBox.Text);
@@ -334,10 +328,10 @@ namespace thedigitalizationprojectproposal
                     priceAverageOutputLabel.Text = averageRoomRates.ToString("n1");
 
                 }
-                catch (Exception ex)
+                catch
                 {
                     // Display the default error message.
-                    MessageBox.Show(ex.Message);
+                    MessageBox.Show("The average room rate is an invalid format or characters");
                 }
             }
         }
@@ -348,6 +342,14 @@ namespace thedigitalizationprojectproposal
             roomRatesTextBoxY3.Text = "";
             roomRatesTextBoxY2.Text = "";
             priceAverageOutputLabel.Text = "";
+            roomAverageRateTextBox.Text = "";
+            discountPercentageTextBox.Text = "";
+            outputRoomSalesRateLabel.Text = "";
+
+            // Set the focus to nameTextBox.
+            //Programmmers control the focus by the following syntax general method
+            //ControlName.Focus();
+            hotelOrLodgingTextBox.Focus();
         }
 
         private void exitButton1_Click(object sender, EventArgs e)
@@ -360,8 +362,8 @@ namespace thedigitalizationprojectproposal
         {
             {
 
-                try
-                {
+               try
+               {
 
                     int occupiedRooms;
                     decimal averageDailyRates;
@@ -369,13 +371,13 @@ namespace thedigitalizationprojectproposal
                     occupiedRooms = int.Parse(occupiedRoomsTotalTextBox.Text);
                     averageDailyRates = decimal.Parse(averageDailyRoomRatesTextBox.Text);
                     revenueStream = (decimal)occupiedRooms * averageDailyRates;
-                    outputFormulaLabel2.Text = (revenueStream.ToString("n"));
+                    outputFormulaLabel2.Text = (revenueStream.ToString("c"));
 
-                }
-                catch
-                {
-                  MessageBox.Show("Invalid integer.");
-                }
+               }
+               catch
+               {
+                   MessageBox.Show("Invalid integer.");
+               }
 
                 //
                 String message;
@@ -393,44 +395,62 @@ namespace thedigitalizationprojectproposal
                 outputFormulaLabel2.BackColor = Color.White;
                 outputFormulaLabel2.ForeColor = Color.Purple;
             }
-    
-}
+
+        }
 
 
         private void displayOutputRevenue_Click(object sender, EventArgs e)
         {
-            
-          int occupiedRooms;
-          decimal averageDailyRates;
-          decimal revenueStream;
-          occupiedRooms = int.Parse(occupiedRoomsTotalTextBox.Text);
-          averageDailyRates = decimal.Parse(averageDailyRoomRatesTextBox.Text);
-          revenueStream = (decimal)occupiedRooms * averageDailyRates;
-          outputAnnualRevenueEarnedHotelTotalLabel1.Text = (revenueStream.ToString("n"));
+            {
+                try
+                {
+                    int occupiedRooms;
+                    decimal averageDailyRates;
+                    decimal revenueStream;
+                    occupiedRooms = int.Parse(occupiedRoomsTotalTextBox.Text);
+                    averageDailyRates = decimal.Parse(averageDailyRoomRatesTextBox.Text);
+                    revenueStream = (decimal)occupiedRooms * averageDailyRates;
+                    outputAnnualRevenueEarnedHotelTotalLabel1.Text = (revenueStream.ToString("n"));
 
-          outputAnnualRevenueEarnedHotelTotalLabel1.BackColor = Color.White;
-          outputAnnualRevenueEarnedHotelTotalLabel1.ForeColor = Color.Purple;
+                    outputAnnualRevenueEarnedHotelTotalLabel1.BackColor = Color.White;
+                    outputAnnualRevenueEarnedHotelTotalLabel1.ForeColor = Color.Purple;
 
+                }
+                catch
+                {
+                    // Display the default error message.
+                    MessageBox.Show("Invalid Character in Revenue Stream");
+                }
 
+            }
 
         }
 
         private void grossIncomeButton_Click(object sender, EventArgs e)
         {
-           
-            decimal revenueStream;
-            decimal costOfRoomsSold;
-            decimal grossIncome;
-            //decimal.TryParse(outputsalesRevenueTextBox.Text, out grossIncome);
-            costOfRoomsSold = decimal.Parse(outputCostRoomsSoldTotalLabel.Text);
-            revenueStream = decimal.Parse(outputAnnualRevenueEarnedHotelTotalLabel1.Text);
-            //grossIncome = decimal.Parse(grossIncomeLabel.Text);
-            grossIncome = revenueStream - costOfRoomsSold;
-            grossIncomeLabel.Text = (grossIncome.ToString("n"));
+            {
+                try
+                {
+                    decimal revenueStream;
+                    decimal costOfRoomsSold;
+                    decimal grossIncome;
+                    //decimal.TryParse(outputsalesRevenueTextBox.Text, out grossIncome);
+                    costOfRoomsSold = decimal.Parse(outputCostRoomsSoldTotalLabel.Text);
+                    //string revenueStream = outputAnnualRevenueEarnedHotelTotalLabel1.Text;
+                    revenueStream = decimal.Parse(outputAnnualRevenueEarnedHotelTotalLabel1.Text);
+                    //grossIncome = decimal.Parse(grossIncomeLabel.Text);
+                    grossIncome = revenueStream - costOfRoomsSold;
+                    grossIncomeLabel.Text = (grossIncome.ToString("n"));
 
-            grossIncomeLabel.BackColor = Color.White;
-            grossIncomeLabel.ForeColor = Color.Purple;
-
+                    grossIncomeLabel.BackColor = Color.White;
+                    grossIncomeLabel.ForeColor = Color.Purple;
+                }
+                catch
+                {
+                    // Display the tailored error message.
+                    MessageBox.Show("The gross income has an invalid character or format");
+                }
+            }
         }
 
         private void calculateNetIncomeButton_Click(object sender, EventArgs e)
@@ -440,27 +460,22 @@ namespace thedigitalizationprojectproposal
                 {
                     decimal grossIncome;
                     decimal operatingExpenses;
-                    decimal netIncome;
+                    double netIncome;
                     grossIncome = decimal.Parse(grossIncomeLabel.Text);
                     operatingExpenses = decimal.Parse(insertExcessExpensesTextBox.Text);
                     //netIncome = decimal.Parse(outputFormulaLabel3.Text);
-                    netIncome = (grossIncome - operatingExpenses);
-                    outputFormulaLabel3.Text = (netIncome.ToString("n"));
+                    netIncome = (double) grossIncome - (double) operatingExpenses;
+                    outputFormulaLabel3.Text = (netIncome.ToString("c"));
 
                     outputFormulaLabel3.BackColor = Color.White;
                     outputFormulaLabel3.ForeColor = Color.Purple;
                 }
-                catch (Exception ex)
+                catch 
                 {
-                 // Display the default error message.
-                 MessageBox.Show(ex.Message);
+                    // Display the tailoed error message.
+                    MessageBox.Show("Invalid character or format inputs in calculateNetIncomeButton control");
                 }
             }
-        }
-
-        private void priceAverageOutputLabel_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void calculateSalesRevenueButton_Click(object sender, EventArgs e)
@@ -494,7 +509,7 @@ namespace thedigitalizationprojectproposal
                     MessageBox.Show(ex.Message);
                 }
             }
-       }
+        }
 
         private void calculateRoomRate_Click_1(object sender, EventArgs e)
         {
@@ -523,7 +538,7 @@ namespace thedigitalizationprojectproposal
                     roomSalesRate = roomAverageRate - discountAmount;
 
                     // Display the sale price.
-                    outputRoomSalesRateLabel.Text = roomSalesRate.ToString("c");
+                    outputRoomSalesRateLabel.Text = roomSalesRate.ToString("n");
 
                 }
                 catch (Exception ex)
@@ -531,9 +546,54 @@ namespace thedigitalizationprojectproposal
                     // Display the default error message.
                     MessageBox.Show(ex.Message);
                 }
+                //finally
+                //{
+                    //This code always runs
+                    //outputRoomSalesRateLabel.Text = "the try-catch block has completed.";
+               // }
             }
         }
 
+        private void costRoomsSalesTotalTextBox_TextChanged(object sender, EventArgs e)
+        {
+            {
+                //{
+                    //try
+                    //{
+                        //double costRoomsSalesTotal;
+                        //costRoomsSalesTotal = double.Parse(costRoomsSalesTotalTextBox.Text);
+                        //costRoomsSalesTotal++;
+                        //costRoomsSalesTotalTextBox.Text = (costRoomsSalesTotal.ToString("n3"));
+
+                    //}
+                    //catch (Exception ex)
+                    //{
+                        // Display the default error message.
+                       // MessageBox.Show(ex.Message);
+                    //}
+                //}
+
+            }
+        }
+
+        private void costRoomsGoodsSoldTotalTextBox_TextChanged(object sender, EventArgs e)
+        {
+            {
+                //try
+                //{
+                   // double costRoomsGoodsSold;
+                    //costRoomsGoodsSold = double.Parse(costRoomsGoodsSoldTotalTextBox.Text);
+                    //costRoomsGoodsSold++;
+                    //costRoomsGoodsSoldTotalTextBox.Text = (costRoomsGoodsSold.ToString("n3"));
+
+                //}
+                //catch (Exception ex)
+                //{
+                    // Display the default error message.
+                   // MessageBox.Show(ex.Message);
+               // }
+            }
+        }
     }
 }
 
