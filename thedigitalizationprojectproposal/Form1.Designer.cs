@@ -117,6 +117,18 @@
             this.roomSalesRateLabel = new System.Windows.Forms.Label();
             this.discountPercentageLabel = new System.Windows.Forms.Label();
             this.RoomAverageRateLabel = new System.Windows.Forms.Label();
+            this.hotelEstablishmentNetIncomeLabelControl = new System.Windows.Forms.Label();
+            this.yearsInServiceAsTourismAttractionsLabelControl = new System.Windows.Forms.Label();
+            this.yearsInTouristDestinationMarketsWithValueLabelControl = new System.Windows.Forms.Label();
+            this.percentageOfNetIncomeFromRetailTourismTradingActivitesLabelControl = new System.Windows.Forms.Label();
+            this.hotelEstablishmentNetIncomeTextBox = new System.Windows.Forms.TextBox();
+            this.yearsInServiceAsTourismAttractionsTextBox = new System.Windows.Forms.TextBox();
+            this.yearsInTouristDestinationMarketsWithValueTextBox = new System.Windows.Forms.TextBox();
+            this.percentageOfNetIncomeFromRetailTourismTradingActivitesTextBox = new System.Windows.Forms.TextBox();
+            this.calculateForDevelopment = new System.Windows.Forms.Button();
+            this.clearButton3 = new System.Windows.Forms.Button();
+            this.existButton3 = new System.Windows.Forms.Button();
+            this.decisionLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.sitePictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).BeginInit();
             this.averageRoomRateCalculator.SuspendLayout();
@@ -177,10 +189,10 @@
             // 
             this.exitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exitButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.exitButton.Location = new System.Drawing.Point(912, 647);
+            this.exitButton.Location = new System.Drawing.Point(897, 604);
             this.exitButton.Margin = new System.Windows.Forms.Padding(4);
             this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(104, 25);
+            this.exitButton.Size = new System.Drawing.Size(117, 25);
             this.exitButton.TabIndex = 71;
             this.exitButton.Text = "Disconnect off  E&xit";
             this.exitButton.UseVisualStyleBackColor = true;
@@ -217,7 +229,7 @@
             // 
             this.connectToTouristAppButtom.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.connectToTouristAppButtom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.connectToTouristAppButtom.Location = new System.Drawing.Point(38, 622);
+            this.connectToTouristAppButtom.Location = new System.Drawing.Point(38, 599);
             this.connectToTouristAppButtom.Margin = new System.Windows.Forms.Padding(4);
             this.connectToTouristAppButtom.Name = "connectToTouristAppButtom";
             this.connectToTouristAppButtom.Size = new System.Drawing.Size(287, 26);
@@ -232,7 +244,7 @@
             this.connectToOneStopTourismServicesButton.AutoSize = true;
             this.connectToOneStopTourismServicesButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.connectToOneStopTourismServicesButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.connectToOneStopTourismServicesButton.Location = new System.Drawing.Point(39, 593);
+            this.connectToOneStopTourismServicesButton.Location = new System.Drawing.Point(39, 572);
             this.connectToOneStopTourismServicesButton.Margin = new System.Windows.Forms.Padding(4);
             this.connectToOneStopTourismServicesButton.Name = "connectToOneStopTourismServicesButton";
             this.connectToOneStopTourismServicesButton.Size = new System.Drawing.Size(286, 26);
@@ -539,7 +551,7 @@
             // 
             this.clearButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clearButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.clearButton.Location = new System.Drawing.Point(773, 646);
+            this.clearButton.Location = new System.Drawing.Point(897, 577);
             this.clearButton.Margin = new System.Windows.Forms.Padding(4);
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(117, 25);
@@ -1184,13 +1196,134 @@
             this.RoomAverageRateLabel.Text = "Current Room Rate:";
             this.RoomAverageRateLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // hotelEstablishmentNetIncomeLabelControl
+            // 
+            this.hotelEstablishmentNetIncomeLabelControl.BackColor = System.Drawing.Color.White;
+            this.hotelEstablishmentNetIncomeLabelControl.ForeColor = System.Drawing.Color.Purple;
+            this.hotelEstablishmentNetIncomeLabelControl.Location = new System.Drawing.Point(365, 577);
+            this.hotelEstablishmentNetIncomeLabelControl.Name = "hotelEstablishmentNetIncomeLabelControl";
+            this.hotelEstablishmentNetIncomeLabelControl.Size = new System.Drawing.Size(297, 23);
+            this.hotelEstablishmentNetIncomeLabelControl.TabIndex = 134;
+            this.hotelEstablishmentNetIncomeLabelControl.Text = "Hotel Establishment Net Income";
+            // 
+            // yearsInServiceAsTourismAttractionsLabelControl
+            // 
+            this.yearsInServiceAsTourismAttractionsLabelControl.BackColor = System.Drawing.Color.White;
+            this.yearsInServiceAsTourismAttractionsLabelControl.ForeColor = System.Drawing.Color.Purple;
+            this.yearsInServiceAsTourismAttractionsLabelControl.Location = new System.Drawing.Point(365, 601);
+            this.yearsInServiceAsTourismAttractionsLabelControl.Name = "yearsInServiceAsTourismAttractionsLabelControl";
+            this.yearsInServiceAsTourismAttractionsLabelControl.Size = new System.Drawing.Size(297, 23);
+            this.yearsInServiceAsTourismAttractionsLabelControl.TabIndex = 135;
+            this.yearsInServiceAsTourismAttractionsLabelControl.Text = "Years in Service as Tourism Attraction";
+            // 
+            // yearsInTouristDestinationMarketsWithValueLabelControl
+            // 
+            this.yearsInTouristDestinationMarketsWithValueLabelControl.BackColor = System.Drawing.Color.White;
+            this.yearsInTouristDestinationMarketsWithValueLabelControl.ForeColor = System.Drawing.Color.Purple;
+            this.yearsInTouristDestinationMarketsWithValueLabelControl.Location = new System.Drawing.Point(365, 625);
+            this.yearsInTouristDestinationMarketsWithValueLabelControl.Name = "yearsInTouristDestinationMarketsWithValueLabelControl";
+            this.yearsInTouristDestinationMarketsWithValueLabelControl.Size = new System.Drawing.Size(297, 23);
+            this.yearsInTouristDestinationMarketsWithValueLabelControl.TabIndex = 136;
+            this.yearsInTouristDestinationMarketsWithValueLabelControl.Text = "Years in Tourist Destination Markets with Value";
+            // 
+            // percentageOfNetIncomeFromRetailTourismTradingActivitesLabelControl
+            // 
+            this.percentageOfNetIncomeFromRetailTourismTradingActivitesLabelControl.BackColor = System.Drawing.Color.White;
+            this.percentageOfNetIncomeFromRetailTourismTradingActivitesLabelControl.ForeColor = System.Drawing.Color.Purple;
+            this.percentageOfNetIncomeFromRetailTourismTradingActivitesLabelControl.Location = new System.Drawing.Point(365, 649);
+            this.percentageOfNetIncomeFromRetailTourismTradingActivitesLabelControl.Name = "percentageOfNetIncomeFromRetailTourismTradingActivitesLabelControl";
+            this.percentageOfNetIncomeFromRetailTourismTradingActivitesLabelControl.Size = new System.Drawing.Size(297, 23);
+            this.percentageOfNetIncomeFromRetailTourismTradingActivitesLabelControl.TabIndex = 137;
+            this.percentageOfNetIncomeFromRetailTourismTradingActivitesLabelControl.Text = "Percentage of NetIncome from Retail Tourism Trading Activites";
+            // 
+            // hotelEstablishmentNetIncomeTextBox
+            // 
+            this.hotelEstablishmentNetIncomeTextBox.Location = new System.Drawing.Point(667, 577);
+            this.hotelEstablishmentNetIncomeTextBox.Name = "hotelEstablishmentNetIncomeTextBox";
+            this.hotelEstablishmentNetIncomeTextBox.Size = new System.Drawing.Size(223, 23);
+            this.hotelEstablishmentNetIncomeTextBox.TabIndex = 138;
+            // 
+            // yearsInServiceAsTourismAttractionsTextBox
+            // 
+            this.yearsInServiceAsTourismAttractionsTextBox.Location = new System.Drawing.Point(667, 601);
+            this.yearsInServiceAsTourismAttractionsTextBox.Name = "yearsInServiceAsTourismAttractionsTextBox";
+            this.yearsInServiceAsTourismAttractionsTextBox.Size = new System.Drawing.Size(223, 23);
+            this.yearsInServiceAsTourismAttractionsTextBox.TabIndex = 139;
+            // 
+            // yearsInTouristDestinationMarketsWithValueTextBox
+            // 
+            this.yearsInTouristDestinationMarketsWithValueTextBox.Location = new System.Drawing.Point(667, 625);
+            this.yearsInTouristDestinationMarketsWithValueTextBox.Name = "yearsInTouristDestinationMarketsWithValueTextBox";
+            this.yearsInTouristDestinationMarketsWithValueTextBox.Size = new System.Drawing.Size(223, 23);
+            this.yearsInTouristDestinationMarketsWithValueTextBox.TabIndex = 140;
+            // 
+            // percentageOfNetIncomeFromRetailTourismTradingActivitesTextBox
+            // 
+            this.percentageOfNetIncomeFromRetailTourismTradingActivitesTextBox.Location = new System.Drawing.Point(666, 649);
+            this.percentageOfNetIncomeFromRetailTourismTradingActivitesTextBox.Name = "percentageOfNetIncomeFromRetailTourismTradingActivitesTextBox";
+            this.percentageOfNetIncomeFromRetailTourismTradingActivitesTextBox.Size = new System.Drawing.Size(224, 23);
+            this.percentageOfNetIncomeFromRetailTourismTradingActivitesTextBox.TabIndex = 141;
+            // 
+            // calculateForDevelopment
+            // 
+            this.calculateForDevelopment.ForeColor = System.Drawing.Color.Purple;
+            this.calculateForDevelopment.Location = new System.Drawing.Point(38, 626);
+            this.calculateForDevelopment.Name = "calculateForDevelopment";
+            this.calculateForDevelopment.Size = new System.Drawing.Size(287, 26);
+            this.calculateForDevelopment.TabIndex = 142;
+            this.calculateForDevelopment.Text = "Develop";
+            this.calculateForDevelopment.UseVisualStyleBackColor = true;
+            this.calculateForDevelopment.Click += new System.EventHandler(this.calculateForDevelopment_Click);
+            // 
+            // clearButton3
+            // 
+            this.clearButton3.ForeColor = System.Drawing.Color.Purple;
+            this.clearButton3.Location = new System.Drawing.Point(896, 649);
+            this.clearButton3.Name = "clearButton3";
+            this.clearButton3.Size = new System.Drawing.Size(75, 23);
+            this.clearButton3.TabIndex = 143;
+            this.clearButton3.Text = "Clear";
+            this.clearButton3.UseVisualStyleBackColor = true;
+            this.clearButton3.Click += new System.EventHandler(this.clearButton3_Click);
+            // 
+            // existButton3
+            // 
+            this.existButton3.ForeColor = System.Drawing.Color.Purple;
+            this.existButton3.Location = new System.Drawing.Point(897, 677);
+            this.existButton3.Name = "existButton3";
+            this.existButton3.Size = new System.Drawing.Size(75, 23);
+            this.existButton3.TabIndex = 144;
+            this.existButton3.Text = "E&xit";
+            this.existButton3.UseVisualStyleBackColor = true;
+            this.existButton3.Click += new System.EventHandler(this.existButton3_Click);
+            // 
+            // decisionLabel
+            // 
+            this.decisionLabel.BackColor = System.Drawing.Color.White;
+            this.decisionLabel.ForeColor = System.Drawing.Color.Purple;
+            this.decisionLabel.Location = new System.Drawing.Point(365, 675);
+            this.decisionLabel.Name = "decisionLabel";
+            this.decisionLabel.Size = new System.Drawing.Size(525, 26);
+            this.decisionLabel.TabIndex = 145;
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.decisionLabel);
+            this.Controls.Add(this.existButton3);
+            this.Controls.Add(this.clearButton3);
+            this.Controls.Add(this.calculateForDevelopment);
+            this.Controls.Add(this.percentageOfNetIncomeFromRetailTourismTradingActivitesTextBox);
+            this.Controls.Add(this.yearsInTouristDestinationMarketsWithValueTextBox);
+            this.Controls.Add(this.yearsInServiceAsTourismAttractionsTextBox);
+            this.Controls.Add(this.hotelEstablishmentNetIncomeTextBox);
+            this.Controls.Add(this.percentageOfNetIncomeFromRetailTourismTradingActivitesLabelControl);
+            this.Controls.Add(this.yearsInTouristDestinationMarketsWithValueLabelControl);
+            this.Controls.Add(this.yearsInServiceAsTourismAttractionsLabelControl);
+            this.Controls.Add(this.hotelEstablishmentNetIncomeLabelControl);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.averageRevenueTextBox);
             this.Controls.Add(this.averageRevenueOnSite);
@@ -1262,8 +1395,13 @@
             this.Controls.Add(this.hotelOrLodgingTextBox);
             this.Controls.Add(this.tourismLabel1);
             this.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HelpButton = true;
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
+            this.ShowIcon = false;
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.Text = "One-Stop Tourism Development, Solutions and Services";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.sitePictureBox)).EndInit();
@@ -1368,6 +1506,18 @@
         private System.Windows.Forms.Label roomSalesRateLabel;
         private System.Windows.Forms.Label discountPercentageLabel;
         public System.Windows.Forms.Label RoomAverageRateLabel;
+        private System.Windows.Forms.Label hotelEstablishmentNetIncomeLabelControl;
+        private System.Windows.Forms.Label yearsInServiceAsTourismAttractionsLabelControl;
+        private System.Windows.Forms.Label yearsInTouristDestinationMarketsWithValueLabelControl;
+        private System.Windows.Forms.Label percentageOfNetIncomeFromRetailTourismTradingActivitesLabelControl;
+        private System.Windows.Forms.TextBox hotelEstablishmentNetIncomeTextBox;
+        private System.Windows.Forms.TextBox yearsInServiceAsTourismAttractionsTextBox;
+        private System.Windows.Forms.TextBox yearsInTouristDestinationMarketsWithValueTextBox;
+        private System.Windows.Forms.TextBox percentageOfNetIncomeFromRetailTourismTradingActivitesTextBox;
+        private System.Windows.Forms.Button calculateForDevelopment;
+        private System.Windows.Forms.Button clearButton3;
+        private System.Windows.Forms.Button existButton3;
+        private System.Windows.Forms.Label decisionLabel;
     }
 }
 

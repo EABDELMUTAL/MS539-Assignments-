@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Drawing.Printing;
 using System.Linq;
@@ -362,8 +363,8 @@ namespace thedigitalizationprojectproposal
         {
             {
 
-               try
-               {
+                try
+                {
 
                     int occupiedRooms;
                     decimal averageDailyRates;
@@ -373,11 +374,11 @@ namespace thedigitalizationprojectproposal
                     revenueStream = (decimal)occupiedRooms * averageDailyRates;
                     outputFormulaLabel2.Text = (revenueStream.ToString("c"));
 
-               }
-               catch
-               {
-                   MessageBox.Show("Invalid integer.");
-               }
+                }
+                catch
+                {
+                    MessageBox.Show("Invalid integer.");
+                }
 
                 //
                 String message;
@@ -464,13 +465,13 @@ namespace thedigitalizationprojectproposal
                     grossIncome = decimal.Parse(grossIncomeLabel.Text);
                     operatingExpenses = decimal.Parse(insertExcessExpensesTextBox.Text);
                     //netIncome = decimal.Parse(outputFormulaLabel3.Text);
-                    netIncome = (double) grossIncome - (double) operatingExpenses;
+                    netIncome = (double)grossIncome - (double)operatingExpenses;
                     outputFormulaLabel3.Text = (netIncome.ToString("c"));
 
                     outputFormulaLabel3.BackColor = Color.White;
                     outputFormulaLabel3.ForeColor = Color.Purple;
                 }
-                catch 
+                catch
                 {
                     // Display the tailoed error message.
                     MessageBox.Show("Invalid character or format inputs in calculateNetIncomeButton control");
@@ -548,9 +549,9 @@ namespace thedigitalizationprojectproposal
                 }
                 //finally
                 //{
-                    //This code always runs
-                    //outputRoomSalesRateLabel.Text = "the try-catch block has completed.";
-               // }
+                //This code always runs
+                //outputRoomSalesRateLabel.Text = "the try-catch block has completed.";
+                // }
             }
         }
 
@@ -558,19 +559,19 @@ namespace thedigitalizationprojectproposal
         {
             {
                 //{
-                    //try
-                    //{
-                        //double costRoomsSalesTotal;
-                        //costRoomsSalesTotal = double.Parse(costRoomsSalesTotalTextBox.Text);
-                        //costRoomsSalesTotal++;
-                        //costRoomsSalesTotalTextBox.Text = (costRoomsSalesTotal.ToString("n3"));
+                //try
+                //{
+                //double costRoomsSalesTotal;
+                //costRoomsSalesTotal = double.Parse(costRoomsSalesTotalTextBox.Text);
+                //costRoomsSalesTotal++;
+                //costRoomsSalesTotalTextBox.Text = (costRoomsSalesTotal.ToString("n3"));
 
-                    //}
-                    //catch (Exception ex)
-                    //{
-                        // Display the default error message.
-                       // MessageBox.Show(ex.Message);
-                    //}
+                //}
+                //catch (Exception ex)
+                //{
+                // Display the default error message.
+                // MessageBox.Show(ex.Message);
+                //}
                 //}
 
             }
@@ -581,19 +582,101 @@ namespace thedigitalizationprojectproposal
             {
                 //try
                 //{
-                   // double costRoomsGoodsSold;
-                    //costRoomsGoodsSold = double.Parse(costRoomsGoodsSoldTotalTextBox.Text);
-                    //costRoomsGoodsSold++;
-                    //costRoomsGoodsSoldTotalTextBox.Text = (costRoomsGoodsSold.ToString("n3"));
+                // double costRoomsGoodsSold;
+                //costRoomsGoodsSold = double.Parse(costRoomsGoodsSoldTotalTextBox.Text);
+                //costRoomsGoodsSold++;
+                //costRoomsGoodsSoldTotalTextBox.Text = (costRoomsGoodsSold.ToString("n3"));
 
                 //}
                 //catch (Exception ex)
                 //{
-                    // Display the default error message.
-                   // MessageBox.Show(ex.Message);
-               // }
+                // Display the default error message.
+                // MessageBox.Show(ex.Message);
+                // }
             }
+        }
+
+        private void calculateForDevelopment_Click(object sender, EventArgs e)
+        {
+
+            {
+                try
+                {
+                    //Names Constants 
+                    const decimal MINIMUM_HOTELESTABLISHMENTNETINCOME = 30000000m;
+                    const int MINIMUM_YEARS_IN_TOURISMATTRACTIONS = 10;             // More than 
+                    const int MINIMUM_YEARS_IN_TOURISTDESTINATIONMARKETS = 10;      // Less than 
+                    const double MINIMUM_PERCENTAGE_NETINCOMERETAILTOURISMTRADING = 0.4;
+
+                    // Local variables 
+                    decimal hotelEstablishmentNetIncome;
+                    int yearsInServiceAsTourismAttractions;
+                    int yearsInTouristDestinationMarketsWithValue;
+                    double percentageOfNetIncomeFromRetailTourismTradingActivities;
+
+                    // Get values from text boxes 
+                    hotelEstablishmentNetIncome = decimal.Parse(hotelEstablishmentNetIncomeTextBox.Text);
+                    yearsInServiceAsTourismAttractions = int.Parse(yearsInServiceAsTourismAttractionsTextBox.Text); 
+                    yearsInTouristDestinationMarketsWithValue = int.Parse(yearsInTouristDestinationMarketsWithValueTextBox.Text); 
+                    percentageOfNetIncomeFromRetailTourismTradingActivities = double.Parse(percentageOfNetIncomeFromRetailTourismTradingActivitesTextBox.Text);
+
+                    // Determine qualification 
+                    if (hotelEstablishmentNetIncome >= MINIMUM_HOTELESTABLISHMENTNETINCOME)
+                    {
+                        if (yearsInServiceAsTourismAttractions >= MINIMUM_YEARS_IN_TOURISMATTRACTIONS)
+                        {
+                            if (yearsInTouristDestinationMarketsWithValue >= MINIMUM_YEARS_IN_TOURISTDESTINATIONMARKETS)
+                            {
+                                if (percentageOfNetIncomeFromRetailTourismTradingActivities >= MINIMUM_PERCENTAGE_NETINCOMERETAILTOURISMTRADING)
+                                {
+                                    // The hotel component of the tourism industry qualifies for development 
+                                    decisionLabel.Text = "You qualify for development in this tourism attraction or destination market based on hotel component net income, years as a tourist attraction, years in destination markets, and growth in retail tourism trading activities.";
+                                }
+                                else
+                                {
+                                    // Percentage of net income from retail tourism trading activities not met 
+                                    decisionLabel.Text = "Percentage of retail tourism trading activities from net income not met. Tourism components do not qualify with this percentage.";
+                                }
+                            }
+                            else
+                            {
+                                // Number of years in current tourist destination market not met 
+                                decisionLabel.Text = "Number of years in current tourist destination market not met. Tourism components do not qualify.";
+                            }
+                        }
+                        else
+                        {
+                            // Number of years in service as tourism attractions not met 
+                            decisionLabel.Text = "Number of years in service as tourism attractions not met. Tourism component does not qualify with those number of years.";
+                        }
+                    }
+                    else
+                    {
+                        // Minimum net income requirements not met 
+                        decisionLabel.Text = "Minimum net income requirements not met.";
+                    }
+                }
+                catch (Exception ex)
+                {
+                    // Display an error message 
+                    MessageBox.Show(ex.Message);
+                }
+            }
+
+        }
+
+        private void clearButton3_Click(object sender, EventArgs e)
+        {
+            hotelEstablishmentNetIncomeTextBox.Text="";
+            yearsInServiceAsTourismAttractionsTextBox.Text = "";
+            yearsInTouristDestinationMarketsWithValueTextBox.Text = "";
+            percentageOfNetIncomeFromRetailTourismTradingActivitesTextBox.Text = "";
+        }
+
+        private void existButton3_Click(object sender, EventArgs e)
+        {
+            //close form
+            this.Close();
         }
     }
 }
-
