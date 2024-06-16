@@ -500,7 +500,7 @@ namespace thedigitalizationprojectproposal
                     // Display the average test score, with
                     //The program instruction has rounded the                  
                     //output to 1 decimal point
-                    averageRevenueTextBox.Text = averageRevenuesGathered.ToString("n1");
+                    averageRevenueTextBox.Text = averageRevenuesGathered.ToString("n");
 
                 }
                 catch (Exception ex)
